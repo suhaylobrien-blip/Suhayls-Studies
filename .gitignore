@@ -1,0 +1,18 @@
+# --- Personal documents (DO NOT push to public repo) ---
+Supporting Docs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*.docx
+~$*.xlsx
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OneDrive sync artefacts
+*.tmp
