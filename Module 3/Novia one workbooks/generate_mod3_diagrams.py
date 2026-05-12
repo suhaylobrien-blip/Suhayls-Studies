@@ -158,7 +158,7 @@ def sa_regulators():
     ax.set_xlim(0, 12); ax.set_ylim(0, 8); ax.axis("off")
 
     # Top: Twin Peaks
-    ax.add_patch(mp.FancyBboxPatch((4.5, 6.8), 3, 0.7,
+    ax.add_patch(mp.FancyBboxPatch((3.5, 6.8), 5, 0.7,
         boxstyle="round,pad=0.04", linewidth=0, facecolor=NAVY))
     ax.text(6, 7.15, "FSRA 2017 — Twin Peaks",
             ha="center", va="center", color="white", fontsize=10, fontweight="bold")
