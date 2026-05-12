@@ -25,7 +25,8 @@ Each module folder contains:
 | Module | Topic | Summary | Workbook Answers |
 |---|---|---|---|
 | 1 | Introduction to Financial Markets | Done | n/a |
-| 2 | Fundamentals of Economics | Done | Done |
+| 2 | Fundamentals of Economics | Done (with diagrams) | Done |
+| 3 | Regulation of Financial Markets | Done (with diagrams) | Done |
 
 ## Excluded from this repo
 

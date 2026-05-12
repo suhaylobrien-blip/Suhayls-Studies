@@ -5,8 +5,10 @@ from reportlab.lib.units import mm
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.platypus import (
     BaseDocTemplate, PageTemplate, Frame, Paragraph, Spacer, Table, TableStyle,
-    KeepTogether, FrameBreak
+    KeepTogether, FrameBreak, Image,
 )
+
+DIAG_DIR = r"C:\Users\SuhaylO'Brien\OneDrive - BrickField Canvas\Documents\NOVIA ONE\Module 2\diagrams"
 
 OUTPUT = r"C:\Users\SuhaylO'Brien\OneDrive - BrickField Canvas\Documents\NOVIA ONE\Module 2\FMP Module 2 - Condensed Study Summary.pdf"
 
@@ -96,6 +98,23 @@ CELL_HEAD = ParagraphStyle(
     "CH", fontName="Helvetica-Bold", fontSize=8.4, textColor=TEXT, leading=11,
     spaceAfter=0,
 )
+CAP = ParagraphStyle(
+    "cap", fontName="Helvetica-Oblique", fontSize=7.8, textColor=MUTED,
+    leading=10, alignment=1, spaceAfter=6,
+)
+
+
+def diagram(name, width):
+    import os
+    from PIL import Image as PILImage
+    path = os.path.join(DIAG_DIR, name)
+    im = PILImage.open(path)
+    aspect = im.height / im.width
+    return Image(path, width=width, height=width * aspect)
+
+
+def caption(t):
+    return Paragraph(t, CAP)
 
 
 def hsection(text):
@@ -244,6 +263,8 @@ def build():
         "<b>Price &gt; equilibrium → surplus</b> (excess supply).",
         "<b>Price &lt; equilibrium → shortage</b> (excess demand).",
     ]))
+    s.append(diagram("supply_demand.png", fw))
+    s.append(caption("Demand slopes down, supply slopes up — equilibrium where they cross."))
 
     s.append(sub("Price Elasticity (PED / PES)"))
     s.append(p("% change in quantity for a 1% change in price."))
@@ -271,6 +292,9 @@ def build():
                      ["1. Price on Y-axis (exception to maths convention).",
                       "2. Movement along curve = price-only change.",
                       "3. Shift of curve = any other factor changes."]))
+
+    s.append(diagram("price_controls.png", fw))
+    s.append(caption("Ceiling pinned BELOW equilibrium → shortage. Floor pinned ABOVE → surplus."))
 
     # =================== PAGE 2 — RIGHT ===================
     s.append(FrameBreak())
@@ -349,6 +373,8 @@ def build():
     s.append(callout("FORMULA · MEMORISE",
                      ["<b>GDP (Y) = C + I + G + (X − M)</b>",
                       "C = household Consumption · I = business Investment · G = Government spending · X−M = net exports."]))
+    s.append(diagram("gdp_components.png", fw))
+    s.append(caption("Household consumption dominates SA GDP; net exports are small but variable."))
     s.append(p("<b>Income approach:</b> GDP = wages + rents + interest + profits."))
     s.append(p("<b>Y = C + S</b> — Income equals Consumption + Savings."))
     s.append(p("<b>MPC</b> (Marginal Propensity to Consume) = fraction of each extra rand of income spent."))
@@ -375,6 +401,8 @@ def build():
 
     s.append(hsection("1.6 THE BUSINESS CYCLE"))
     s.append(p("Repetitive fluctuations in real GDP around its long-run potential path."))
+    s.append(diagram("business_cycle.png", fw))
+    s.append(caption("Four phases: trough → expansion → peak → contraction. Long-term trend slopes up."))
     s.extend(bul([
         "<b>Expansion</b> — rising output, falling unemployment.",
         "<b>Peak</b> — economy operating above potential; inflationary pressure builds.",
