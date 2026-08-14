@@ -16,3 +16,9 @@ venv/
 
 # OneDrive sync artefacts
 *.tmp
+
+# --- Work Experience portfolio (DO NOT push to public repo) ---
+# Contains the learner's ID number, employer address, and SA Bullion confidential
+# commercial data: realised P&L, hedge fills, margin floors, counterparty terms and a
+# treasury control gap analysis. Backed up in the PRIVATE Brain repo instead.
+Module 5/Work Experience/
