@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Module 5 — Interest Bearing Securities &amp; Bonds (Workbook Answers)</title>
+<link rel="stylesheet" href="pdf-house-style.css">
+<style>
+  /* question components — same visual language as the Module 4 answer pack */
+  .q{ border:1px solid var(--line); border-radius:12px; margin:10px 0; overflow:hidden; break-inside:avoid; background:#fff; }
+  .qh{ background:var(--lav2); border-bottom:1px solid var(--line);
+       display:flex; align-items:center; gap:10px; padding:9px 14px; }
+  .qh .badge{ background:var(--purple2); color:#fff; font-weight:700; font-size:8.5pt;
+              padding:3px 8px; border-radius:6px; white-space:nowrap; }
+  .qh .qt{ font-weight:700; font-size:10.5pt; flex:1; }
+  .qh .mk{ color:var(--muted); font-size:9pt; white-space:nowrap; }
+  .qb{ padding:12px 14px; }
+  .qb > *:first-child{ margin-top:0; }
+  .qb > *:last-child{ margin-bottom:0; }
+  .qb p, .qb li{ font-size:10.5pt; }
+  .calc{ background:#FBFAF6; border:1px solid var(--line); border-radius:8px;
+         padding:10px 12px; margin:8px 0; font-size:10pt; break-inside:avoid; }
+  .calc .l{ display:flex; justify-content:space-between; gap:12px; padding:3px 0; }
+  .calc .l span:last-child{ font-weight:700; white-space:nowrap; }
+  .calc .tot{ border-top:1px solid var(--line); margin-top:4px; padding-top:6px; }
+  .ans{ background:#EAF7F2; border-left:4px solid var(--green); border-radius:8px;
+        padding:9px 13px; margin:8px 0; font-size:10.5pt; break-inside:avoid; }
+  .ans .t{ font-weight:700; color:#177C5B; text-transform:uppercase; letter-spacing:.08em; font-size:8.5pt; }
+  .opts{ margin:6px 0 8px; }
+  .opts .o{ display:flex; gap:9px; padding:3px 0; font-size:10.5pt; }
+  .opts .o .k{ font-weight:700; min-width:30px; white-space:nowrap; }
+  .opts .o.pick .k{ color:var(--green); }
+  .opts .o.pick{ font-weight:600; }
+</style>
+</head>
+<body>
+
+<!-- ================= 1 · COVER ================= -->
+<section class="sheet cover">
+  <div class="brand">Novia One<span class="dot">.</span></div>
+  <div class="rule"></div>
+
+  <div style="height:52mm"></div>
+
+  <div class="pill">FMP · MODULE 5 · WORKBOOK</div>
+  <div class="eyebrow" style="margin-top:16px">Practical Evidence · Interest Bearing Securities &amp; Bonds</div>
+  <div class="headline">Workbook,<br><span class="g">answered.</span></div>
+  <p class="lead" style="max-width:152mm;margin-top:10px">Model answers to all <b>9 questions (50 marks)</b>, matched to the
+  lecturer's marking style: bullet points with examples for list questions, prose for conceptual ones, and full workings shown for
+  every calculation.</p>
+
+  <div style="height:16mm"></div>
+
+  <div class="card" style="max-width:152mm">
+    <p style="margin-top:0"><b>Note:</b> study/model answers to learn from. The workbook is assessed as <b>your own work</b>
+    (pass mark <b>65%</b>) — reword in your own voice for submission.</p>
+    <p style="margin-bottom:0"><small class="muted">No lecturer memo has been released for Module 5 yet. When it is, the answers
+    verified against it will carry a <b>MEMO</b> tag, exactly as in the Module 4 pack.</small></p>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+<!-- ================= 2 · MARK ALLOCATION ================= -->
+<section class="sheet">
+  <div class="sec">Mark allocation at a glance</div>
+
+  <table>
+    <thead><tr><th style="width:16%">Question</th><th>Topic</th><th class="r" style="width:14%">Marks</th></tr></thead>
+    <tbody>
+      <tr><td><b>Q1</b></td><td>Treasury bills — definition, issuer and purpose of issuance</td><td class="r">5</td></tr>
+      <tr><td><b>Q2</b></td><td>Main features of a bond · bond prices and interest rates</td><td class="r">5</td></tr>
+      <tr><td><b>Q3</b></td><td>Under-priced (discount) versus premium bonds</td><td class="r">3</td></tr>
+      <tr><td><b>Q4</b></td><td>Bond valuation at 4%, 6% and 7% — calculations</td><td class="r">6</td></tr>
+      <tr><td><b>Q5</b></td><td>Duration versus investment horizon — which risk</td><td class="r">2</td></tr>
+      <tr><td><b>Q6</b></td><td>Economic health and credit spreads</td><td class="r">2</td></tr>
+      <tr><td><b>Q7</b></td><td>Effective duration from a valuation model — calculation</td><td class="r">3</td></tr>
+      <tr><td><b>Q8</b></td><td>Case study — SA sovereign downgrade into junk (S&amp;P, April 2020)</td><td class="r">10</td></tr>
+      <tr><td><b>Q9</b></td><td>Multiple choice — valuation, quotes, embedded options, BEY, term structure</td><td class="r">14</td></tr>
+      <tr><td><b>Total</b></td><td></td><td class="r"><b>50</b></td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <span class="t">Answer style</span> List questions use a lead-in plus <b>bold-label bullets</b> (with examples); conceptual and
+    discursive questions are answered in <b>prose</b>, usually with a “However…” or consequence paragraph. Calculations show the
+    <b>formula, the substitution and the answer</b>, plus the financial-calculator route.
+  </div>
+
+  <div class="exam">
+    <span class="t">On the mark weights</span> The workbook gives marks <b>per question only</b>, not per sub-question. The weights
+    shown in brackets on each card are therefore my <b>suggested split</b> — they add to the stated question total, but do not treat
+    them as the lecturer's own allocation.
+  </div>
+
+  <div class="card tight">
+    <h4>Before you submit</h4>
+    <p><small>Name, surname and <b>ID number at the top of every page</b>, pages numbered · <b>Arial 12</b>, one-and-a-half line
+    spacing, <b>2 cm margins</b> all round · number your answers to match the question numbers · complete the candidate details and
+    declaration · submit as a <b>PDF</b> on Moodle by the deadline. Minimum <b>65%</b> to be found competent.</small></p>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+<!-- ================= 3 · Q1 ================= -->
+<section class="sheet">
+  <div class="sec">Question 1 · Treasury bills [05]</div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">1.1</span><span class="qt">Define a treasury bill and then indicate what institution issues it.</span><span class="mk">(≈3)</span></div>
+    <div class="qb">
+      <p>A <b>Treasury bill (T-bill)</b> is a <b>short-term debt instrument</b>, denominated in <b>South African rand</b>, that is
+      <b>sold at a discount to its par value</b> and <b>carries no coupon</b>. Because it pays no periodic interest it is in effect a
+      <b>zero-coupon instrument</b>: the investor's return is the difference between the discounted price paid and the par value,
+      which is <b>redeemed in full at par on maturity</b>.</p>
+      <p>T-bills are issued at maturities ranging from <b>one day to twelve months</b>, with a typical life to maturity of
+      <b>four weeks to twelve months</b>, which places them firmly in the <b>money market</b>. They carry <b>little or even no
+      default risk</b>, and for that reason the interest rates on Treasury bills serve as the <b>benchmark default-free interest
+      rates</b> in the market. Any new issue carrying the same maturity date as an existing issue is regarded as a
+      <b>new tranche</b> of that security.</p>
+      <p>They are issued by <b>government (the National Treasury)</b>, and the <b>issuing agent is the South African Reserve Bank
+      (SARB)</b>.</p>
+    </div>
+  </div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">1.2</span><span class="qt">For what purposes does this institution issue treasury bills?</span><span class="mk">(≈2)</span></div>
+    <div class="qb">
+      <p>Treasury bills are issued for the following purposes:</p>
+      <ul class="tick">
+        <li><b>Short-term funding for government:</b> they raise short-term money to bridge the timing mismatch between when
+        government collects revenue and when it must spend, and they help finance the <b>public sector borrowing requirement</b>.</li>
+        <li><b>Managing government's liquidity:</b> T-bills are used as a <b>tool to manage government's cash flow and liquidity
+        position</b>, which is the money market's most important economic role — allowing economic units to adjust their liquidity
+        positions.</li>
+        <li><b>Implementing monetary policy:</b> the SARB uses the money market, and the issue and redemption of government paper
+        within it, to <b>manage the amount of money in circulation</b> and to transmit monetary policy decisions to the financial
+        markets.</li>
+        <li><b>Providing a risk-free benchmark:</b> because they are effectively free of default risk, T-bill rates give the market
+        its <b>benchmark default-free interest rates</b> against which other instruments are priced.</li>
+        <li><b>Providing a low-risk, highly liquid investment:</b> they give banks, corporates and money market funds a safe,
+        marketable place to hold short-term surplus cash.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+<!-- ================= 4 · Q2 ================= -->
+<section class="sheet">
+  <div class="sec">Question 2 · Features of a bond &amp; the price–rate relationship [05]</div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">2.1</span><span class="qt">List and briefly describe the main features of a bond.</span><span class="mk">(≈3)</span></div>
+    <div class="qb">
+      <p>The main features of a bond are:</p>
+      <ul class="tick">
+        <li><b>Name of the issuer:</b> the entity borrowing the money and responsible for paying the interest and repaying the
+        principal — governments, corporations or state-owned entities such as Eskom and Transnet.</li>
+        <li><b>Par (face) value:</b> the <b>principal amount repaid at maturity</b>, against which the coupon is calculated. Prices
+        are quoted as a percentage of par, so a R1,000 par bond quoted at 98 sells for R980.</li>
+        <li><b>Coupon rate:</b> the rate applied to <b>par value</b> (not to the price) to determine the interest paid — a R1,000
+        bond with a 6% coupon pays R60 a year. It may be <b>fixed, floating or zero</b>.</li>
+        <li><b>Coupon frequency:</b> how often the coupon is paid — <b>usually semi-annually</b>; each payment is the annual coupon
+        divided by the frequency.</li>
+        <li><b>Maturity date:</b> the date the principal falls due and the bond <b>ceases to exist</b>. Terms run from one day to
+        30 years (1–5 short, 5–12 medium, 12+ long); a bond with <b>no maturity date is a perpetual bond</b>.</li>
+        <li><b>Yield to maturity:</b> the <b>discount rate</b> used to price the bond — the effective return earned if the bond is
+        held to maturity and the coupons are reinvested at that yield.</li>
+        <li><b>Currency:</b> the currency in which the coupon and principal are paid.</li>
+        <li><b>Security / collateral:</b> whether the bond is <b>secured</b> (backed by a legal claim on specified assets) or
+        <b>unsecured</b> (a debenture, backed only by the issuer's promise to pay).</li>
+        <li><b>Contractual rights and covenants:</b> set out in the <b>trust deed</b> (the bond indenture) — the
+        <b>negative covenants</b> that prohibit the borrower from certain actions and the <b>affirmative covenants</b> it promises
+        to perform.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">2.2</span><span class="qt">Describe your understanding of the relationship between bond prices and interest rates.</span><span class="mk">(≈2)</span></div>
+    <div class="qb">
+      <p>Bond prices and interest rates move in <b>opposite directions</b> — they are <b>inversely related</b>. Once a bond has been
+      issued its <b>coupon is fixed</b> for the life of the bond, but market interest rates change continuously, so newly issued
+      bonds will offer different interest payments to existing ones.</p>
+      <p>Suppose interest rates <b>fall</b>. New bonds are issued with lower coupons, which makes the existing higher-coupon bonds
+      <b>more valuable</b> to investors, so their <b>price rises</b>. Because the bond now costs more to buy, the return the new
+      investor earns on it is lower — so the <b>yield falls</b>. The reverse happens when rates <b>rise</b>: new issues offer higher
+      coupons, older low-coupon bonds become less attractive and must be <b>sold at a discount</b>, so their price falls and their
+      yield rises.</p>
+      <p>Mathematically the same point holds because the <b>yield to maturity is the discount rate</b> in the pricing model: as the
+      discount rate increases, the present value of the bond's fixed cash flows — and therefore its price — decreases. This is why
+      the comparison of coupon against yield determines whether a bond trades at a <b>premium, at par or at a discount</b>, and it is
+      the source of <b>interest rate risk</b> for anyone who may have to sell before maturity.</p>
+    </div>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+<!-- ================= 5 · Q3 ================= -->
+<section class="sheet">
+  <div class="sec">Question 3 · Under-priced (discount) versus premium bonds [03]</div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">3.1</span><span class="qt">Explain the difference between a bond that is under-priced and one that is trading at a premium.</span><span class="mk">(3)</span></div>
+    <div class="qb">
+      <p>The difference comes down to one comparison: the bond's <b>coupon rate against the prevailing market yield</b> (the required
+      rate of return), which then fixes the price relative to <b>par</b>.</p>
+      <p>An <b>under-priced bond trades at a discount</b> — its price is <b>below par</b> (below 100). This happens when the bond's
+      <b>coupon rate is lower than the yield the market currently requires</b>, typically because interest rates have risen since the
+      bond was issued, or because the issuer's credit quality has deteriorated. An investor will only buy that older, lower-coupon
+      bond if the price is low enough that the coupon plus the capital gain to maturity together deliver the market yield. The
+      bondholder therefore earns part of the return as <b>capital appreciation</b>, because the price is <b>pulled up to par</b> as
+      maturity approaches.</p>
+      <p>A bond <b>trading at a premium</b> is the mirror image — its price is <b>above par</b> (above 100), because its
+      <b>coupon rate is higher than the yield the market currently requires</b>, typically because rates have fallen since issue or
+      the issuer's credit standing has improved. Investors are willing to pay more than par for the above-market income stream, but
+      the premium is steadily <b>amortised as the price declines back to par</b> at maturity, so the higher coupon is offset by a
+      capital loss.</p>
+      <p>In both cases the bond <b>converges to par at maturity</b> — the constant-yield price trajectory — so the only difference is
+      whether the investor is compensated through a capital gain (discount) or gives some of the higher coupon back through a capital
+      loss (premium).</p>
+      <table style="margin-bottom:0">
+        <thead><tr><th style="width:34%"></th><th>Discount (under-priced)</th><th>Premium</th></tr></thead>
+        <tbody>
+          <tr><td><b>Coupon vs yield</b></td><td>Coupon <b>&lt;</b> market yield</td><td>Coupon <b>&gt;</b> market yield</td></tr>
+          <tr><td><b>Price vs par</b></td><td><b>Below</b> par (&lt; 100)</td><td><b>Above</b> par (&gt; 100)</td></tr>
+          <tr><td><b>Usually because</b></td><td>Rates have <b>risen</b> / credit weakened</td><td>Rates have <b>fallen</b> / credit improved</td></tr>
+          <tr><td><b>To maturity</b></td><td>Capital <b>gain</b> as price rises to par</td><td>Capital <b>loss</b> as price falls to par</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+<!-- ================= 6 · Q4 part 1 ================= -->
+<section class="sheet">
+  <div class="sec">Question 4 · Bond valuation at three discount rates [06]</div>
+
+  <div class="note">
+    <span class="t">Given</span> A <b>R1,000 par</b>, <b>5-year</b>, <b>6% coupon</b> bond with <b>annual</b> interest payments.
+    So <b>PMT = R60 a year</b> (6% × R1,000), <b>FV = R1,000</b> and <b>n = 5</b>. Required: the value of the bond when the discount
+    rate is 4%, 6% and 7%.
+  </div>
+
+  <div class="card">
+    <h4>Method — the present value model</h4>
+    <p><small>The value of a bond is the <b>present value of its expected cash flows</b>, discounted at the required rate of return:
+    the coupons form an annuity and the par value is a single lump sum at maturity.</small></p>
+    <div class="formula" style="font-size:11.5pt;margin-bottom:6px">
+      P = coupon ×
+      <span class="frac"><span class="num">1 − (1 + <span class="var">i</span>)<sup>−n</sup></span><span class="den"><span class="var">i</span></span></span>
+      &nbsp;+&nbsp; par × (1 + <span class="var">i</span>)<sup>−n</sup>
+    </div>
+    <p><small class="muted">On a financial calculator: <b>N = 5, PMT = 60, FV = 1 000, I/Y = the discount rate → solve for PV</b>.
+    (Interest is annual here, so there is no need to halve the coupon and rate or double the periods.)</small></p>
+  </div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">4.1</span><span class="qt">Discount rate = 4%</span><span class="mk">(2)</span></div>
+    <div class="qb">
+      <div class="calc">
+        <div class="l"><span>Annuity factor: [1 − (1.04)<sup>−5</sup>] ÷ 0.04</span><span>4.451822</span></div>
+        <div class="l"><span>PV of coupons: R60 × 4.451822</span><span>R267.11</span></div>
+        <div class="l"><span>Discount factor: (1.04)<sup>−5</sup></span><span>0.821927</span></div>
+        <div class="l"><span>PV of par: R1,000 × 0.821927</span><span>R821.93</span></div>
+        <div class="l tot"><span><b>Value of the bond</b></span><span>R1,089.04</span></div>
+      </div>
+      <div class="ans"><span class="t">Answer</span> <b>R1,089.04</b> — the bond trades at a <b>premium</b>, because the 6% coupon is
+      higher than the 4% yield the market requires.</div>
+    </div>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+<!-- ================= 7 · Q4 part 2 ================= -->
+<section class="sheet">
+  <div class="sec small">Question 4, continued</div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">4.2</span><span class="qt">Discount rate = 6%</span><span class="mk">(2)</span></div>
+    <div class="qb">
+      <div class="calc">
+        <div class="l"><span>Annuity factor: [1 − (1.06)<sup>−5</sup>] ÷ 0.06</span><span>4.212364</span></div>
+        <div class="l"><span>PV of coupons: R60 × 4.212364</span><span>R252.74</span></div>
+        <div class="l"><span>Discount factor: (1.06)<sup>−5</sup></span><span>0.747258</span></div>
+        <div class="l"><span>PV of par: R1,000 × 0.747258</span><span>R747.26</span></div>
+        <div class="l tot"><span><b>Value of the bond</b></span><span>R1,000.00</span></div>
+      </div>
+      <div class="ans"><span class="t">Answer</span> <b>R1,000.00</b> — the bond trades <b>at par</b>, because the coupon rate and
+      the required yield are <b>equal</b>.</div>
+    </div>
+  </div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">4.3</span><span class="qt">Discount rate = 7%</span><span class="mk">(2)</span></div>
+    <div class="qb">
+      <div class="calc">
+        <div class="l"><span>Annuity factor: [1 − (1.07)<sup>−5</sup>] ÷ 0.07</span><span>4.100197</span></div>
+        <div class="l"><span>PV of coupons: R60 × 4.100197</span><span>R246.01</span></div>
+        <div class="l"><span>Discount factor: (1.07)<sup>−5</sup></span><span>0.712986</span></div>
+        <div class="l"><span>PV of par: R1,000 × 0.712986</span><span>R712.99</span></div>
+        <div class="l tot"><span><b>Value of the bond</b></span><span>R959.00</span></div>
+      </div>
+      <div class="ans"><span class="t">Answer</span> <b>R959.00</b> — the bond trades at a <b>discount</b>, because the 6% coupon is
+      lower than the 7% yield the market requires.</div>
+    </div>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+<!-- ================= 8 · Q4 summary ================= -->
+<section class="sheet">
+  <div class="sec small">Question 4 — the three answers together</div>
+
+  <table>
+    <thead><tr><th style="width:26%">Discount rate (YTM)</th><th style="width:26%">Value of the bond</th><th>Trades at</th></tr></thead>
+    <tbody>
+      <tr><td><b>4%</b> — below the coupon</td><td><b>R1,089.04</b></td><td><b>Premium</b> (above par)</td></tr>
+      <tr><td><b>6%</b> — equal to the coupon</td><td><b>R1,000.00</b></td><td><b>Par</b></td></tr>
+      <tr><td><b>7%</b> — above the coupon</td><td><b>R959.00</b></td><td><b>Discount</b> (below par)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <span class="t">What the three answers show</span> As the required rate of return rises from 4% to 7%, the value of exactly the
+    same bond falls from R1,089.04 to R959.00 — the <b>inverse relationship between price and yield</b> in numbers, and the
+    premium / par / discount rule: <b>coupon &gt; yield → premium · coupon = yield → par · coupon &lt; yield → discount</b>.
+    Show the <b>formula, the substitution and the answer</b> for each part and <b>label it</b> premium, par or discount — the
+    comparison earns the interpretation mark that the bare number does not.
+  </div>
+
+  <div class="card">
+    <h4>The financial-calculator route</h4>
+    <p><small>Enter <b>N = 5, PMT = 60, FV = 1 000</b>, then set <b>I/Y</b> to each rate in turn and <b>compute PV</b>:</small></p>
+    <div class="kv">
+      <div class="row"><span class="k">I/Y = 4 → CPT PV</span><span class="v">−1,089.04</span></div>
+      <div class="row"><span class="k">I/Y = 6 → CPT PV</span><span class="v">−1,000.00</span></div>
+      <div class="row"><span class="k">I/Y = 7 → CPT PV</span><span class="v">−959.00</span></div>
+    </div>
+    <p><small class="muted">The PV comes back <b>negative</b> because it is the cash you pay out — quote it as a positive value in
+    your answer.</small></p>
+  </div>
+
+  <div class="exam">
+    <span class="t">Common slips on this question</span> Applying the coupon rate to the <b>price instead of par</b> (the coupon is
+    always <b>6% × R1,000 = R60</b>, whatever the discount rate) · <b>halving the coupon and the rate</b> — this bond pays
+    <b>annually</b>, so no semi-annual adjustment is needed · discounting the par value over the <b>wrong number of periods</b>
+    (it is a single lump sum at <b>n = 5</b>, not an annuity).
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+<!-- ================= 8 · Q5 + Q6 ================= -->
+<section class="sheet">
+  <div class="sec">Question 5 · Duration versus investment horizon [02]</div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">5.1</span><span class="qt">An investor has bought a bond with a 10-year duration but plans to sell it to buy a house in 5 years. What risk is he / she partaking in?</span><span class="mk">(2)</span></div>
+    <div class="qb">
+      <p>The investor is taking on <b>interest rate risk</b> — the risk that the price of the bond will fall following a rise in
+      prevailing interest rates, leaving them with a <b>capital loss</b> when they sell.</p>
+      <p>The reason it is so acute here is the <b>mismatch between the bond's duration and the investor's holding horizon</b>.
+      Duration measures how sensitive the bond's price is to a change in interest rates, and this bond has a duration of
+      <b>10 years against a 5-year horizon</b>. As a rule of thumb the price moves by about 1% for every year of duration per 1%
+      change in rates, so a <b>100 basis point rise in rates would cut the price by roughly 10%</b>. Because the bond will be
+      <b>sold in the secondary market and not held to maturity</b>, the investor is <b>not guaranteed to receive par</b> — the
+      proceeds will be whatever the market will pay at that time, which may be more or less than face value.</p>
+      <p>The way to manage it is to <b>manage duration</b>: matching the duration of the bond to the <b>five-year investment
+      horizon</b> would largely immunise the investor against this risk.</p>
+    </div>
+  </div>
+
+  <div class="sec">Question 6 · Economic health and credit spreads [02]</div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">6.1</span><span class="qt">Describe the relationship between the economic health of a nation and credit spreads.</span><span class="mk">(2)</span></div>
+    <div class="qb">
+      <p>The relationship is <b>inverse</b>: as the economic health of a nation <b>deteriorates, credit spreads widen</b>, and as the
+      economy <b>strengthens, credit spreads narrow</b>.</p>
+      <p>A credit spread is the <b>difference in yield between a government (risk-free) bond and another debt security of the same
+      maturity but lower credit quality</b> — it is the additional premium investors demand for taking on credit risk. When the
+      economy weakens, company earnings and cash flows come under pressure, the <b>probability of default rises</b>, and investors'
+      risk appetite falls, so they require <b>more compensation</b> to hold risky paper: the spread widens and, because yields and
+      prices move inversely, bond prices fall. During an <b>economic expansion</b> the opposite happens — default risk recedes,
+      demand for higher-yielding credit increases, and spreads narrow.</p>
+      <p>Because spreads move <b>systematically with the economy</b> in this way, they are widely watched as a <b>barometer of
+      economic health</b>. The same logic applies at country level: the deeper a sovereign's credit standing falls, the wider the
+      spread demanded over benchmark Treasuries — which is exactly what South Africa's downgrades into junk status produced.</p>
+    </div>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+<!-- ================= 9 · Q7 ================= -->
+<section class="sheet">
+  <div class="sec">Question 7 · Effective duration from a valuation model [03]</div>
+
+  <div class="note">
+    <span class="t">Given</span> Current price <b>P₀ = R82.00</b> · if rates <b>decline</b> by 30 bp the price rises to
+    <b>P₋ = R83.50</b> · if rates <b>increase</b> by 30 bp the price falls to <b>P₊ = R80.75</b> · change in yield
+    <b>Δy = 30 basis points = 0.0030</b>.
+  </div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">7.1</span><span class="qt">What is the duration of this bond?</span><span class="mk">(3)</span></div>
+    <div class="qb">
+      <p>The portfolio manager is estimating <b>effective duration</b> — a direct measure of interest rate sensitivity taken from the
+      prices the valuation model produces when the yield curve is shifted up and down:</p>
+      <div class="formula" style="font-size:12pt">
+        Effective duration =
+        <span class="frac"><span class="num">P<sub>−</sub> − P<sub>+</sub></span><span class="den">2 × P<sub>0</sub> × Δ<span class="var">y</span></span></span>
+      </div>
+      <div class="calc">
+        <div class="l"><span>Numerator: R83.50 − R80.75</span><span>2.75</span></div>
+        <div class="l"><span>Denominator: 2 × R82.00 × 0.0030</span><span>0.492</span></div>
+        <div class="l tot"><span><b>Effective duration: 2.75 ÷ 0.492</b></span><span>5.59</span></div>
+      </div>
+      <div class="ans"><span class="t">Answer</span> The duration of the bond is approximately <b>5.59</b> (about
+      <b>5.6 years</b>).</div>
+      <p><b>Interpretation.</b> A duration of 5.59 means that for a <b>100 basis point (1%) change in interest rates</b> the bond's
+      price will change by roughly <b>5.59% in the opposite direction</b> — so a 1% rise in rates implies a price fall of about 5.6%,
+      and a 1% fall in rates implies a price rise of about 5.6%. The higher the duration, the more interest rate risk is embedded in
+      the security.</p>
+    </div>
+  </div>
+
+  <div class="exam">
+    <span class="t">Two easy marks to lose</span> First, <b>Δy must be entered as a decimal</b> — 30 basis points is
+    <b>0.0030</b>, not 30 and not 0.30; using 0.30 gives 0.0559 and using 30 gives 559. Second, <b>P₋ is the price when rates
+    DECLINE</b> (the higher price, R83.50) and <b>P₊ the price when rates rise</b> (R80.75) — swapping them turns the answer
+    negative.
+  </div>
+
+  <div class="card tight">
+    <h4>Why duration and not convexity</h4>
+    <p><small>Duration is a <b>linear</b> approximation of the price–yield relationship, so it is the right tool for a small
+    ±30 bp shift. <b>Convexity</b> captures the curvature that duration misses, and it explains why duration slightly
+    <b>under-estimates the price rise when yields fall</b> and <b>over-estimates the price fall when yields rise</b>.</small></p>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+<!-- ================= 10 · Q8 part 1 ================= -->
+<section class="sheet">
+  <div class="sec">Question 8 · Case study — SA downgraded further into junk [10]</div>
+
+  <div class="note">
+    <span class="t">Given</span> On <b>29 April 2020</b> <b>S&amp;P Global Ratings</b> lowered South Africa's sovereign credit rating
+    further into non-investment grade (junk), citing the impact of <b>COVID-19</b> on public finances and growth. The
+    <b>long-term foreign currency</b> rating went from <b>BB to BB−</b> (three notches below investment grade) and the
+    <b>long-term local currency</b> rating from <b>BB+ to BB</b> (two notches below). <b>Fitch</b> had downgraded weeks earlier for
+    the lack of “a clear path towards government debt stabilisation”, preceded by <b>Moody's</b> in March 2020. S&amp;P expects the
+    cost of servicing public debt to reach about <b>6.5% of GDP by 2023</b> and GDP to shrink <b>4.5%</b> (SARB forecast: 6.1%). The
+    outlook was revised from <b>negative to stable</b>. The alert notes a <b>direct correlation between long-term interest rates and
+    the depth of junk status</b> — the deeper the junk rating, the higher long-term rates tend to go.
+  </div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">8.1</span><span class="qt">Explain what credit rating is.</span><span class="mk">(≈2)</span></div>
+    <div class="qb">
+      <p>A <b>credit rating</b> is an <b>assessment of the creditworthiness of the issuer</b> of a debt instrument — in effect a
+      <b>prediction of the likelihood that the issuer will default</b> on its debt obligations. It is produced by a credit rating
+      agency, which analyses both the <b>qualitative and quantitative</b> information about the prospective debtor, including
+      non-public information obtained by its analysts, and then publishes the result on a standard scale running from
+      <b>AAA (or Aaa)</b> for the highest credit quality down to <b>D or C</b> for default or “junk” quality.</p>
+      <p>Ratings matter because they drive the <b>return the issuer must offer</b>: a <b>lower rating requires a higher yield</b> to
+      compensate investors for the additional risk they carry, and they also affect the instrument's <b>marketability</b>. A rating
+      can be assigned to a <b>specific obligation</b> or to the <b>general creditworthiness of the entity</b> — the latter is a
+      <b>sovereign credit rating</b>, which signifies a country's overall ability to provide a secure investment environment and
+      takes account of its economic status, the transparency of its capital markets, investment flows, foreign direct investment,
+      foreign currency reserves and political stability.</p>
+      <p><b>However</b>, ratings are <b>not buy, sell or hold recommendations</b>. They measure only the issuing entity's
+      <b>ability and willingness to repay debt</b>, they can be unreliable or inaccurate, and they should be used as only
+      <b>one part of a credit analysis</b> alongside in-house research.</p>
+    </div>
+  </div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">8.2</span><span class="qt">List any two (2) credit rating agencies.</span><span class="mk">(≈2)</span></div>
+    <div class="qb">
+      <ul class="tick">
+        <li><b>Standard &amp; Poor's Global Ratings (S&amp;P)</b></li>
+        <li><b>Moody's Investors Service</b></li>
+      </ul>
+      <p><small class="muted">The third of the main agencies is <b>Fitch Ratings</b> — all three are named in the case study — and
+      the study guide also lists <b>Morningstar DBRS</b>.</small></p>
+    </div>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+<!-- ================= 11 · Q8 part 2 ================= -->
+<section class="sheet">
+  <div class="sec small">Question 8, continued</div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">8.3</span><span class="qt">Explain what a “downgrade” implies and how it affects both bond investors and issuers.</span><span class="mk">(≈3)</span></div>
+    <div class="qb">
+      <p>A <b>downgrade</b> is a rating agency's decision to <b>lower an issuer's credit rating</b>, and it implies a
+      <b>deterioration in credit quality</b> — the agency now judges the probability of default to be higher than before. Where the
+      downgrade takes the issuer <b>below investment grade</b>, as it did for South Africa, the debt is classified as
+      <b>non-investment grade, speculative or “junk”</b>. This is the <b>downgrade risk</b> component of credit risk: an anticipated
+      downgrade <b>increases the credit spread</b>, which in turn <b>decreases the price of the bonds</b>.</p>
+      <h4>Effect on bond investors</h4>
+      <ul class="tick">
+        <li><b>Capital losses on existing holdings:</b> the required yield rises, so the market value of bonds already held
+        <b>falls</b>.</li>
+        <li><b>Forced selling and shrinking demand:</b> a downgrade out of investment grade often makes the bond
+        <b>ineligible for portfolios mandated to hold only investment-grade paper</b> — insurers, banks and pension funds that
+        confine themselves to the top rating categories, and index-tracking funds — so they must sell into a falling market.</li>
+        <li><b>Higher return on new money:</b> investors who buy after the downgrade are <b>compensated with a higher yield</b>, which
+        is why junk bonds are also called high-yield bonds; the case study notes investors will demand a higher rate of interest for
+        lending.</li>
+        <li><b>Wider spreads and more volatility:</b> the spread over the risk-free benchmark widens, and for foreign investors a
+        weaker currency can compound the loss.</li>
+      </ul>
+      <h4>Effect on issuers</h4>
+      <ul class="tick">
+        <li><b>Higher cost of borrowing:</b> the issuer must pay a higher rate of interest to raise the same money — the alert makes
+        the point that the <b>further South Africa falls into junk status, the more long-term interest rates tend to rise</b>.</li>
+        <li><b>A heavier debt-service burden:</b> for the sovereign, S&amp;P expects the cost of servicing public debt to climb to
+        about <b>6.5% of GDP by 2023</b>, which consumes revenue that could have funded services.</li>
+        <li><b>Knock-on effect to other issuers:</b> the sovereign rating effectively sets a ceiling for the country's banks,
+        state-owned entities and corporates, so <b>their</b> long-term unsecured debt is repriced too — which is why clients are told
+        to check the rating provisions in their facilities.</li>
+        <li><b>Weaker demand and refinancing risk:</b> a smaller pool of eligible buyers may force the issuer to offer larger
+        discounts, shorter maturities or to postpone issuance altogether.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+<!-- ================= 12 · Q8 part 3 ================= -->
+<section class="sheet">
+  <div class="sec small">Question 8, continued</div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">8.4</span><span class="qt">Describe how the real sector of the South African economy may be influenced by such a downgrade.</span><span class="mk">(≈3)</span></div>
+    <div class="qb">
+      <p>The <b>real sector</b> is the part of the economy that produces goods and services — firms investing, households consuming
+      and workers earning — as opposed to the financial sector. A sovereign downgrade reaches it through the
+      <b>cost and availability of money</b>.</p>
+      <ul class="tick">
+        <li><b>Higher borrowing costs across the economy:</b> because long-term interest rates rise with the depth of junk status,
+        and the government bond yield is the benchmark off which all other domestic debt is priced, <b>firms and households pay more
+        to borrow</b>. Higher rates discourage <b>capital investment, expansion and job creation</b>, and they raise the cost of
+        mortgages, vehicle finance and credit for consumers, which <b>reduces disposable income and consumption</b>.</li>
+        <li><b>Crowding out of government spending:</b> with debt service heading for about <b>6.5% of GDP</b>, a growing share of
+        tax revenue goes to interest rather than to <b>infrastructure, health, education and social spending</b> — the very
+        expenditure that supports real economic activity.</li>
+        <li><b>Reduced foreign investment:</b> the sovereign rating is the <b>first metric most institutional investors look at
+        before investing internationally</b>, and many funds may not hold sub-investment-grade paper. Lower <b>portfolio and direct
+        investment inflows</b> mean less capital for factories, plant and projects.</li>
+        <li><b>Capital outflows, a weaker rand and imported inflation:</b> as investors withdraw, the currency weakens, which raises
+        the price of imported fuel, machinery and inputs. That feeds <b>inflation</b>, squeezes margins and household budgets, and may
+        oblige the SARB to keep <b>policy rates higher</b> than growth would otherwise warrant.</li>
+        <li><b>Tighter credit and weaker banks' funding:</b> because the banks' own long-term debt is repriced after the sovereign
+        downgrade, their funding costs rise and they <b>lend more cautiously</b> — hardest felt by small and medium enterprises.</li>
+        <li><b>Slower growth, lower confidence and employment losses:</b> in combination with COVID-19, S&amp;P expected
+        <b>GDP to shrink 4.5%</b> in that year. Weaker business and consumer confidence <b>defers investment and hiring</b>, which
+        raises unemployment and, through lower tax revenue, feeds back into the fiscal position.</li>
+      </ul>
+      <p><b>However</b>, the picture is not uniformly negative: S&amp;P revised the outlook from <b>negative to stable</b>,
+      recognising some of government's fiscal and monetary measures as strong points, and National Treasury noted that
+      <b>monetary policy was providing liquidity in the bond market and so reducing bond yields</b> — which cushions the real
+      sector's borrowing costs in the short term.</p>
+    </div>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+<!-- ================= 13 · Q9 part 1 ================= -->
+<section class="sheet">
+  <div class="sec">Question 9 · Multiple choice [14]</div>
+
+  <p><small class="muted">Seven questions at two marks each. Tick <b>one</b> box per question; the selected option is shown in
+  green with the working underneath.</small></p>
+
+  <div class="q">
+    <div class="qh"><span class="badge">9.1</span><span class="qt">A bond with a 5.5% coupon paid annually, maturing in three years, required rate of return 5%. The price per 100 of par is closest to:</span><span class="mk">(2)</span></div>
+    <div class="qb">
+      <div class="opts">
+        <div class="o"><span class="k">A</span><span>98.65</span></div>
+        <div class="o pick"><span class="k">B ✓</span><span>101.36</span></div>
+        <div class="o"><span class="k">C</span><span>106.43</span></div>
+      </div>
+      <div class="calc">
+        <div class="l"><span>Annuity factor: [1 − (1.05)<sup>−3</sup>] ÷ 0.05</span><span>2.723248</span></div>
+        <div class="l"><span>PV of coupons: 5.5 × 2.723248</span><span>14.98</span></div>
+        <div class="l"><span>PV of par: 100 × (1.05)<sup>−3</sup> = 100 × 0.863838</span><span>86.38</span></div>
+        <div class="l tot"><span><b>Price per 100 of par</b></span><span>101.36</span></div>
+      </div>
+      <div class="ans"><span class="t">B · 101.36</span> The coupon (5.5%) is <b>above</b> the required return (5%), so the bond must
+      trade at a <b>premium</b> — which rules out A immediately.</div>
+    </div>
+  </div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">9.2</span><span class="qt">Bond A (5% coupon, 2 years) and Bond B (3% coupon, 2 years), annual interest, market discount rate 4%. The price difference per 100 of par is closest to:</span><span class="mk">(2)</span></div>
+    <div class="qb">
+      <div class="opts">
+        <div class="o"><span class="k">A</span><span>3.70</span></div>
+        <div class="o pick"><span class="k">B ✓</span><span>3.77</span></div>
+        <div class="o"><span class="k">C</span><span>4.00</span></div>
+      </div>
+      <div class="calc">
+        <div class="l"><span>Annuity factor: [1 − (1.04)<sup>−2</sup>] ÷ 0.04</span><span>1.886095</span></div>
+        <div class="l"><span>Bond A: 5 × 1.886095 + 100 × 0.924556</span><span>101.886</span></div>
+        <div class="l"><span>Bond B: 3 × 1.886095 + 100 × 0.924556</span><span>98.114</span></div>
+        <div class="l tot"><span><b>Difference: 101.886 − 98.114</b></span><span>3.772</span></div>
+      </div>
+      <div class="ans"><span class="t">B · 3.77</span> Both bonds share the same maturity and discount rate, so the difference is
+      simply the <b>2% coupon differential discounted as a two-year annuity</b>: 2 × 1.886095 = <b>3.77</b>. Option C (4.00) is the
+      trap — the undiscounted total of the two extra coupons.</div>
+    </div>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+<!-- ================= 14 · Q9 part 2 ================= -->
+<section class="sheet">
+  <div class="sec small">Question 9, continued</div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">9.3</span><span class="qt">Bond A (101.886, 5%, 2 yrs), Bond B (100.000, 6%, 2 yrs), Bond C (97.327, 5%, 3 yrs). Which bond offers the lowest yield-to-maturity?</span><span class="mk">(2)</span></div>
+    <div class="qb">
+      <div class="opts">
+        <div class="o pick"><span class="k">A ✓</span><span>Bond A</span></div>
+        <div class="o"><span class="k">B</span><span>Bond B</span></div>
+        <div class="o"><span class="k">C</span><span>Bond C</span></div>
+      </div>
+      <p>Compare each price with par, then confirm by pricing at the candidate yield:</p>
+      <table style="margin-top:4px">
+        <thead><tr><th style="width:16%">Bond</th><th style="width:26%">Price vs par</th><th style="width:24%">So the YTM must be…</th><th>YTM</th></tr></thead>
+        <tbody>
+          <tr><td><b>A</b></td><td>101.886 — <b>premium</b></td><td><b>below</b> the 5% coupon</td><td>5 × 1.886095 + 100 × 0.924556 = 101.886 → <b>4%</b></td></tr>
+          <tr><td><b>B</b></td><td>100.000 — <b>at par</b></td><td><b>equal</b> to the coupon</td><td><b>6%</b></td></tr>
+          <tr><td><b>C</b></td><td>97.327 — <b>discount</b></td><td><b>above</b> the 5% coupon</td><td>5 × 2.673012 + 100 × 0.839619 = 97.327 → <b>6%</b></td></tr>
+        </tbody>
+      </table>
+      <div class="ans"><span class="t">A · Bond A</span> Bond A is the only bond trading at a <b>premium</b>, so it is the only one
+      whose yield is <b>below</b> its coupon rate — <b>4%</b>, against 6% for both B and C. You can answer this from the
+      premium/par/discount rule alone, without calculating a single yield.</div>
+    </div>
+  </div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">9.4</span><span class="qt">Bond dealers most often quote the:</span><span class="mk">(2)</span></div>
+    <div class="qb">
+      <div class="opts">
+        <div class="o pick"><span class="k">A ✓</span><span>Flat price</span></div>
+        <div class="o"><span class="k">B</span><span>Full price</span></div>
+        <div class="o"><span class="k">C</span><span>Full price plus accrued interest</span></div>
+      </div>
+      <div class="ans"><span class="t">A · Flat price</span> The <b>flat price</b> is also called the <b>clean or quoted price</b> —
+      the clue is in the name. It is the <b>full price less accrued interest</b>, and dealers quote it so that the quote does not jump
+      around simply because interest is accruing day by day.</div>
+      <p><small class="muted">The <b>full price</b> (invoice or <b>dirty</b> price) is what the buyer actually pays at settlement:
+      <b>accrued interest + clean price = full price</b>, with the accrued interest <b>paid to the seller</b> for the period from the
+      last coupon date to the sale date. Option C is nonsense — the full price <b>already includes</b> accrued interest, so adding it
+      again double-counts.</small></p>
+    </div>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+<!-- ================= 15 · Q9 part 3 ================= -->
+<section class="sheet">
+  <div class="sec small">Question 9, continued</div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">9.5</span><span class="qt">All else equal, which ONE of the following types of bonds will offer the greatest YTM at issuance?</span><span class="mk">(2)</span></div>
+    <div class="qb">
+      <div class="opts">
+        <div class="o"><span class="k">A</span><span>Putable bond</span></div>
+        <div class="o pick"><span class="k">B ✓</span><span>Callable bond</span></div>
+        <div class="o"><span class="k">C</span><span>Convertible bond</span></div>
+      </div>
+      <div class="ans"><span class="t">B · Callable bond</span> The <b>call option belongs to the issuer</b>, so it is valuable to the
+      <b>issuer</b> and disadvantageous to the bondholder — who also carries the <b>reinvestment risk</b> of having the bond redeemed
+      exactly when proceeds can only be reinvested at a lower yield. The bondholder must therefore be compensated, so a callable bond
+      must offer a <b>higher yield (a lower price)</b> than an otherwise identical non-callable bond.</div>
+      <p><small class="muted">The other two options give the <b>option to the bondholder</b>: a <b>putable</b> bond lets the holder
+      sell it back at a prespecified price, and a <b>convertible</b> lets the holder exchange it for shares. Because those rights are
+      valuable to the holder, both are issued at a <b>lower yield (a higher price)</b> than an identical straight bond.</small></p>
+    </div>
+  </div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">9.6</span><span class="qt">Calculate the BEY for a money market security with 180 days to maturity and a quoted add-on yield of 2% based on a 365-day year.</span><span class="mk">(2)</span></div>
+    <div class="qb">
+      <div class="opts">
+        <div class="o"><span class="k">A</span><span>2.12%</span></div>
+        <div class="o"><span class="k">B</span><span>2.63%</span></div>
+        <div class="o pick"><span class="k">C ✓</span><span>2.0%</span></div>
+      </div>
+      <div class="calc">
+        <div class="l"><span>Holding period yield: 2% × (180 ÷ 365)</span><span>0.9863%</span></div>
+        <div class="l"><span>BEY = HPY × (365 ÷ 180) = 0.9863% × 2.02778</span><span>2.00%</span></div>
+      </div>
+      <div class="ans"><span class="t">C · 2.0%</span> The <b>bond equivalent yield is itself an add-on yield expressed on a
+      365-day year</b> — the nominal annual rate. The quote given is <b>already</b> an add-on yield on a 365-day basis, so no
+      conversion is needed and the <b>BEY equals the quoted 2%</b>. Annualising the 180-day holding period yield returns the same
+      2.0%, as the working shows.</div>
+      <p><small class="muted">Where a conversion <i>is</i> required is when the quote is on a different basis — for example a
+      <b>discount yield</b>, which conventionally uses a <b>360-day</b> year: 2% × 365/360 = 2.03%. This is the one item in the paper
+      whose distractors do not reconcile with a standard route, so <b>check it against the memo</b> when it is released.</small></p>
+    </div>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+<!-- ================= 16 · Q9 part 4 + MCQ KEY ================= -->
+<section class="sheet">
+  <div class="sec small">Question 9, continued</div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">9.7</span><span class="qt">Under the pure expectations theory, an inverted yield curve is interpreted as evidence that…</span><span class="mk">(2)</span></div>
+    <div class="qb">
+      <div class="opts">
+        <div class="o"><span class="k">A</span><span>demand for long-term bonds is falling</span></div>
+        <div class="o"><span class="k">B</span><span>investors have very little demand for liquidity</span></div>
+        <div class="o pick"><span class="k">C ✓</span><span>short-term rates are expected to fall in the future</span></div>
+      </div>
+      <div class="ans"><span class="t">C · Short-term rates are expected to fall</span> Under <b>pure expectations</b>, any long-term
+      rate is the <b>geometric mean of current and expected future short-term rates</b>, so the shape of the curve is read purely as
+      an expectation. An <b>inverted</b> curve means <b>short-term rates are higher now but are expected to decrease in future</b>,
+      which is also why the material links an inverted curve to expectations of a <b>lower future policy rate</b>.</div>
+      <p><small class="muted">A describes a <b>market segmentation / supply-and-demand</b> explanation and B a
+      <b>liquidity preference</b> explanation — both are the wrong theory for this stem.</small></p>
+    </div>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+<!-- ================= 17 · CALCULATION SUMMARY ================= -->
+<section class="sheet">
+  <div class="sec">Calculation summary</div>
+
+  <table>
+    <thead><tr><th style="width:22%">Calculation</th><th style="width:30%">Formula used</th><th>Answer</th></tr></thead>
+    <tbody>
+      <tr><td><b>Q4.1</b> — value at 4%</td><td>PV of coupon annuity + PV of par</td><td><b>R1,089.04</b> — premium</td></tr>
+      <tr><td><b>Q4.2</b> — value at 6%</td><td>PV of coupon annuity + PV of par</td><td><b>R1,000.00</b> — at par</td></tr>
+      <tr><td><b>Q4.3</b> — value at 7%</td><td>PV of coupon annuity + PV of par</td><td><b>R959.00</b> — discount</td></tr>
+      <tr><td><b>Q7</b> — duration</td><td>(P₋ − P₊) ÷ (2 × P₀ × Δy)</td><td><b>5.59</b> (2.75 ÷ 0.492)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+<!-- ================= 18 · MCQ ANSWER KEY ================= -->
+<section class="sheet">
+  <div class="sec">Multiple choice — answer key</div>
+
+  <table>
+    <thead><tr><th style="width:16%">Question</th><th style="width:22%">Answer</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td><b>9.1</b></td><td><b>B</b> — 101.36</td><td>Coupon 5.5% &gt; required 5% → premium; PV = 14.98 + 86.38</td></tr>
+      <tr><td><b>9.2</b></td><td><b>B</b> — 3.77</td><td>2% coupon differential × two-year annuity factor 1.886095</td></tr>
+      <tr><td><b>9.3</b></td><td><b>A</b> — Bond A</td><td>Only bond at a premium → YTM 4%, below B and C at 6%</td></tr>
+      <tr><td><b>9.4</b></td><td><b>A</b> — Flat price</td><td>Flat = clean = quoted price; full price includes accrued interest</td></tr>
+      <tr><td><b>9.5</b></td><td><b>B</b> — Callable bond</td><td>Option belongs to the <b>issuer</b> → higher yield / lower price</td></tr>
+      <tr><td><b>9.6</b></td><td><b>C</b> — 2.0%</td><td>BEY is an add-on yield on a 365-day year — the quote already is one</td></tr>
+      <tr><td><b>9.7</b></td><td><b>C</b> — short-term rates expected to fall</td><td>Pure expectations reads the curve as pure expectation of future rates</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <span class="t">When the memo lands</span> Send me the lecturer's answers and I will re-cut this pack against them — tagging each
+    verified answer <b>MEMO</b> and adjusting any wording, mark split or answer that differs, exactly as we did for Module 4. The
+    two items most worth checking are <b>9.6 (BEY)</b> and the <b>mark splits within Q1, Q2 and Q8</b>.
+  </div>
+
+  <div class="card tight">
+    <h4>Study pair</h4>
+    <p><small>Use this pack with the two Module 5 study documents: the <b>Summarised Reference</b> for last-minute recall and the
+    <b>In-Depth Workbook</b> for understanding. All three are built from Novia's own study guide and class deck.</small></p>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+</body>
+</html>

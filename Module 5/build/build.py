@@ -39,6 +39,11 @@ JOBS = [
         os.path.join(MOD, "Full in depth study material",
                      "Module 5 — Interest Bearing Securities & Bonds (In-Depth Workbook).pdf"),
     ),
+    (
+        "mod5-workbook-answers.html",
+        os.path.join(MOD, "M5 ASSIGNEMent",
+                     "Module 5 — Interest Bearing Securities & Bonds (Workbook Answers).pdf"),
+    ),
 ]
 
 
