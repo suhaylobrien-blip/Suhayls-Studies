@@ -1177,14 +1177,52 @@
   and the <b>conventions or requirements of the industry or regulator</b>. <b>The discriminator is the base</b> the yield is measured
   against: same cash flows, different quoted number.</small></p>
 
-  <div class="sec small">Bond valuation — the present value model</div>
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 25 · THE PV MODEL ================= -->
+<section class="sheet">
+  <div class="sec">Bond valuation — the present value model</div>
 
   <p>The <b>intrinsic value of a bond is the present value of all its future cash flows</b>, discounted at the required rate of
-  return.</p>
+  return. For a <b>plain vanilla bond</b> — a straight, option-free bond paying a fixed coupon and repaying par at maturity — that
+  is written as:</p>
+
+  <div class="formula" style="font-size:14pt">
+    Bond Value =
+    <span style="display:inline-block;text-align:center;vertical-align:middle;font-size:8pt;line-height:1.15;margin:0 2px">
+      <span style="display:block"><span class="var">n</span></span>
+      <span style="display:block;font-size:17pt">Σ</span>
+      <span style="display:block"><span class="var">t</span> = 1</span>
+    </span>
+    <span class="frac"><span class="num"><span class="var">C</span></span><span class="den">(1 + <span class="var">r</span>)<sup><span class="var">t</span></sup></span></span>
+    +
+    <span class="frac"><span class="num"><span class="var">F</span></span><span class="den">(1 + <span class="var">r</span>)<sup><span class="var">n</span></sup></span></span>
+  </div>
+
+  <div class="card tight">
+    <div class="kv">
+      <div class="row"><span class="k"><i>C</i></span><span class="v">coupon payment</span></div>
+      <div class="row"><span class="k"><i>F</i></span><span class="v">face value (par value)</span></div>
+      <div class="row"><span class="k"><i>r</i></span><span class="v">discount rate (market yield)</span></div>
+      <div class="row"><span class="k"><i>n</i></span><span class="v">number of periods until maturity</span></div>
+    </div>
+    <p><small class="muted">In words: <b>the present value of the coupon stream (an annuity) plus the present value of the par value
+    (a single lump sum)</b>. Closed form for hand calculation: <b>P = C × [1 − (1 + r)<sup>−n</sup>] ÷ r &nbsp;+&nbsp; F ×
+    (1 + r)<sup>−n</sup></b>.</small></p>
+  </div>
+
+  <h3>The same equation as the class deck writes it</h3>
+  <p>The deck states it for a <b>semi-annual</b> payer, which is why the coupon and the rate are halved and the periods
+  doubled:</p>
 
   <div class="formula">
     <span class="var">P<sub>m</sub></span> =
-    <span style="font-size:15pt">Σ</span>
+    <span style="display:inline-block;text-align:center;vertical-align:middle;font-size:8pt;line-height:1.15;margin:0 2px">
+      <span style="display:block">2<span class="var">n</span></span>
+      <span style="display:block;font-size:16pt">Σ</span>
+      <span style="display:block"><span class="var">t</span> = 1</span>
+    </span>
     <span class="frac"><span class="num"><span class="var">C<sub>t</sub></span> / 2</span><span class="den">(1 + <span class="var">i</span>/2)<sup><span class="var">t</span></sup></span></span>
     +
     <span class="frac"><span class="num"><span class="var">P<sub>p</sub></span></span><span class="den">(1 + <span class="var">i</span>/2)<sup>2<span class="var">n</span></sup></span></span>
@@ -1192,13 +1230,16 @@
 
   <div class="card tight">
     <div class="kv">
-      <div class="row"><span class="k">P<sub>m</sub></span><span class="v">current market price / value of the bond today</span></div>
-      <div class="row"><span class="k">C<sub>t</sub></span><span class="v">the <b>annual</b> coupon payment</span></div>
-      <div class="row"><span class="k">i</span><span class="v">the prevailing <b>yield to maturity</b> for the issue</span></div>
+      <div class="row"><span class="k">P<sub>m</sub></span><span class="v">current market price / value of the bond today <small class="muted">(= Bond Value)</small></span></div>
+      <div class="row"><span class="k">C<sub>t</sub></span><span class="v">the <b>annual</b> coupon payment <small class="muted">(= C)</small></span></div>
+      <div class="row"><span class="k">i</span><span class="v">the prevailing <b>yield to maturity</b> <small class="muted">(= r)</small></span></div>
       <div class="row"><span class="k">n</span><span class="v">number of <b>years</b> to maturity</span></div>
-      <div class="row"><span class="k">P<sub>p</sub></span><span class="v"><b>par value</b></span></div>
+      <div class="row"><span class="k">P<sub>p</sub></span><span class="v"><b>par value</b> <small class="muted">(= F)</small></span></div>
     </div>
   </div>
+
+<p><small>They are the <b>same model</b> — only the <b>period</b> differs. If the bond pays <b>annually</b>, use <b>C, r and n</b>
+  exactly as given; if it pays <b>semi-annually</b>, halve the coupon, halve the rate and double the periods.</small></p>
 
   <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Summarised Reference · for class</span></div>
 </section>

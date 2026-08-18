@@ -251,11 +251,21 @@
     <h4>Method — the present value model</h4>
     <p><small>The value of a bond is the <b>present value of its expected cash flows</b>, discounted at the required rate of return:
     the coupons form an annuity and the par value is a single lump sum at maturity.</small></p>
-    <div class="formula" style="font-size:11.5pt;margin-bottom:6px">
-      P = coupon ×
-      <span class="frac"><span class="num">1 − (1 + <span class="var">i</span>)<sup>−n</sup></span><span class="den"><span class="var">i</span></span></span>
-      &nbsp;+&nbsp; par × (1 + <span class="var">i</span>)<sup>−n</sup>
+    <div class="formula" style="font-size:13pt;margin-bottom:6px">
+      Bond Value =
+      <span style="display:inline-block;text-align:center;vertical-align:middle;font-size:8pt;line-height:1.15;margin:0 2px">
+        <span style="display:block"><span class="var">n</span></span>
+        <span style="display:block;font-size:16pt">Σ</span>
+        <span style="display:block"><span class="var">t</span> = 1</span>
+      </span>
+      <span class="frac"><span class="num"><span class="var">C</span></span><span class="den">(1 + <span class="var">r</span>)<sup><span class="var">t</span></sup></span></span>
+      +
+      <span class="frac"><span class="num"><span class="var">F</span></span><span class="den">(1 + <span class="var">r</span>)<sup><span class="var">n</span></sup></span></span>
     </div>
+    <p><small><i>C</i> = coupon payment · <i>F</i> = face (par) value · <i>r</i> = discount rate (market yield) ·
+    <i>n</i> = number of periods until maturity. For hand calculation the same thing is written as
+    <b>P = C × [1 − (1 + r)<sup>−n</sup>] ÷ r &nbsp;+&nbsp; F × (1 + r)<sup>−n</sup></b>, which is what is used
+    below.</small></p>
     <p><small class="muted">On a financial calculator: <b>N = 5, PMT = 60, FV = 1 000, I/Y = the discount rate → solve for PV</b>.
     (Interest is annual here, so there is no need to halve the coupon and rate or double the periods.)</small></p>
   </div>
