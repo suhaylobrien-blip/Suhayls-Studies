@@ -248,10 +248,13 @@
   </div>
 
   <div class="card">
-    <h4>Method — the present value model</h4>
-    <p><small>The value of a bond is the <b>present value of its expected cash flows</b>, discounted at the required rate of return:
-    the coupons form an annuity and the par value is a single lump sum at maturity.</small></p>
-    <div class="formula" style="font-size:13pt;margin-bottom:6px">
+    <h4>Two methods — same answer, so use the easier one</h4>
+    <p><small>The value of a bond is the <b>present value of its expected cash flows</b>, discounted at the required rate of return.
+    Both routes below were tested against each other and give <b>exactly the same value</b>. The workings that follow use
+    <b>Method 2</b>, because it is quicker by hand and every line is visible, so a slip is easy to spot.</small></p>
+
+    <h4 style="margin-top:12px">Method 1 — the formula (annuity + lump sum)</h4>
+    <div class="formula" style="font-size:13pt;margin:6px 0">
       Bond Value =
       <span style="display:inline-block;text-align:center;vertical-align:middle;font-size:8pt;line-height:1.15;margin:0 2px">
         <span style="display:block"><span class="var">n</span></span>
@@ -262,64 +265,96 @@
       +
       <span class="frac"><span class="num"><span class="var">F</span></span><span class="den">(1 + <span class="var">r</span>)<sup><span class="var">n</span></sup></span></span>
     </div>
-    <p><small><i>C</i> = coupon payment · <i>F</i> = face (par) value · <i>r</i> = discount rate (market yield) ·
-    <i>n</i> = number of periods until maturity. For hand calculation the same thing is written as
-    <b>P = C × [1 − (1 + r)<sup>−n</sup>] ÷ r &nbsp;+&nbsp; F × (1 + r)<sup>−n</sup></b>, which is what is used
-    below.</small></p>
-    <p><small class="muted">On a financial calculator: <b>N = 5, PMT = 60, FV = 1 000, I/Y = the discount rate → solve for PV</b>.
-    (Interest is annual here, so there is no need to halve the coupon and rate or double the periods.)</small></p>
+    <p><small>Worked as <b>P = C × [1 − (1 + r)<sup>−n</sup>] ÷ r &nbsp;+&nbsp; F × (1 + r)<sup>−n</sup></b> — for example at 4%:
+    R60 × 4.451822 + R1,000 × 0.821927 = <b>R1,089.04</b>. <i>C</i> = coupon payment · <i>F</i> = face (par) value ·
+    <i>r</i> = discount rate · <i>n</i> = periods to maturity.</small></p>
+
+    <h4 style="margin-top:12px">Method 2 — discount each cash flow, then add up the column</h4>
+    <p><small>Write out the bond's actual cash flows — <b>R60 in each of years 1 to 5, plus the R1,000 of par in year 5</b> — divide
+    each one by <b>(1 + r) raised to its own year number</b>, and <b>total the PV column</b>. There is no annuity factor to remember,
+    and it is the same arithmetic the exam's own examples use.</small></p>
+    <p><small class="muted">Calculator check either way: <b>N = 5, PMT = 60, FV = 1 000, I/Y = the discount rate → solve for PV</b>.
+    Interest is <b>annual</b> here, so there is no halving of the coupon and rate or doubling of the periods.</small></p>
   </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
+</section>
+
+<!-- ================= 7 · Q4 · 4.1 and 4.2 ================= -->
+<section class="sheet">
+  <div class="sec small">Question 4 · Method 2 — discounting each cash flow</div>
 
   <div class="q">
     <div class="qh"><span class="badge">4.1</span><span class="qt">Discount rate = 4%</span><span class="mk">(2)</span></div>
     <div class="qb">
-      <div class="calc">
-        <div class="l"><span>Annuity factor: [1 − (1.04)<sup>−5</sup>] ÷ 0.04</span><span>4.451822</span></div>
-        <div class="l"><span>PV of coupons: R60 × 4.451822</span><span>R267.11</span></div>
-        <div class="l"><span>Discount factor: (1.04)<sup>−5</sup></span><span>0.821927</span></div>
-        <div class="l"><span>PV of par: R1,000 × 0.821927</span><span>R821.93</span></div>
-        <div class="l tot"><span><b>Value of the bond</b></span><span>R1,089.04</span></div>
-      </div>
+      <table style="margin-top:0">
+        <thead><tr><th style="width:12%">Year</th><th style="width:20%">Cash flow</th><th>Working</th><th class="r" style="width:20%">PV</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>R60</td><td>60 ÷ (1.04)<sup>1</sup></td><td class="r">R57.69</td></tr>
+          <tr><td>2</td><td>R60</td><td>60 ÷ (1.04)<sup>2</sup></td><td class="r">R55.47</td></tr>
+          <tr><td>3</td><td>R60</td><td>60 ÷ (1.04)<sup>3</sup></td><td class="r">R53.34</td></tr>
+          <tr><td>4</td><td>R60</td><td>60 ÷ (1.04)<sup>4</sup></td><td class="r">R51.29</td></tr>
+          <tr><td>5</td><td>R60</td><td>60 ÷ (1.04)<sup>5</sup></td><td class="r">R49.32</td></tr>
+          <tr><td>5</td><td><b>R1,000</b> <small class="muted">par</small></td><td>1,000 ÷ (1.04)<sup>5</sup></td><td class="r">R821.93</td></tr>
+          <tr><td colspan="3"><b>Value of the bond — total of the PV column</b></td><td class="r"><b>R1,089.04</b></td></tr>
+        </tbody>
+      </table>
       <div class="ans"><span class="t">Answer</span> <b>R1,089.04</b> — the bond trades at a <b>premium</b>, because the 6% coupon is
       higher than the 4% yield the market requires.</div>
+    </div>
+  </div>
+
+  <div class="q">
+    <div class="qh"><span class="badge">4.2</span><span class="qt">Discount rate = 6%</span><span class="mk">(2)</span></div>
+    <div class="qb">
+      <table style="margin-top:0">
+        <thead><tr><th style="width:12%">Year</th><th style="width:20%">Cash flow</th><th>Working</th><th class="r" style="width:20%">PV</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>R60</td><td>60 ÷ (1.06)<sup>1</sup></td><td class="r">R56.60</td></tr>
+          <tr><td>2</td><td>R60</td><td>60 ÷ (1.06)<sup>2</sup></td><td class="r">R53.40</td></tr>
+          <tr><td>3</td><td>R60</td><td>60 ÷ (1.06)<sup>3</sup></td><td class="r">R50.38</td></tr>
+          <tr><td>4</td><td>R60</td><td>60 ÷ (1.06)<sup>4</sup></td><td class="r">R47.53</td></tr>
+          <tr><td>5</td><td>R60</td><td>60 ÷ (1.06)<sup>5</sup></td><td class="r">R44.84</td></tr>
+          <tr><td>5</td><td><b>R1,000</b> <small class="muted">par</small></td><td>1,000 ÷ (1.06)<sup>5</sup></td><td class="r">R747.26</td></tr>
+          <tr><td colspan="3"><b>Value of the bond — total of the PV column</b></td><td class="r"><b>R1,000.00</b></td></tr>
+        </tbody>
+      </table>
+      <div class="ans"><span class="t">Answer</span> <b>R1,000.00</b> — the bond trades <b>at par</b>, because the coupon rate and
+      the required yield are <b>equal</b>.</div>
     </div>
   </div>
 
   <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>
 </section>
 
-<!-- ================= 7 · Q4 part 2 ================= -->
+<!-- ================= 8 · Q4 · 4.3 ================= -->
 <section class="sheet">
   <div class="sec small">Question 4, continued</div>
 
   <div class="q">
-    <div class="qh"><span class="badge">4.2</span><span class="qt">Discount rate = 6%</span><span class="mk">(2)</span></div>
-    <div class="qb">
-      <div class="calc">
-        <div class="l"><span>Annuity factor: [1 − (1.06)<sup>−5</sup>] ÷ 0.06</span><span>4.212364</span></div>
-        <div class="l"><span>PV of coupons: R60 × 4.212364</span><span>R252.74</span></div>
-        <div class="l"><span>Discount factor: (1.06)<sup>−5</sup></span><span>0.747258</span></div>
-        <div class="l"><span>PV of par: R1,000 × 0.747258</span><span>R747.26</span></div>
-        <div class="l tot"><span><b>Value of the bond</b></span><span>R1,000.00</span></div>
-      </div>
-      <div class="ans"><span class="t">Answer</span> <b>R1,000.00</b> — the bond trades <b>at par</b>, because the coupon rate and
-      the required yield are <b>equal</b>.</div>
-    </div>
-  </div>
-
-  <div class="q">
     <div class="qh"><span class="badge">4.3</span><span class="qt">Discount rate = 7%</span><span class="mk">(2)</span></div>
     <div class="qb">
-      <div class="calc">
-        <div class="l"><span>Annuity factor: [1 − (1.07)<sup>−5</sup>] ÷ 0.07</span><span>4.100197</span></div>
-        <div class="l"><span>PV of coupons: R60 × 4.100197</span><span>R246.01</span></div>
-        <div class="l"><span>Discount factor: (1.07)<sup>−5</sup></span><span>0.712986</span></div>
-        <div class="l"><span>PV of par: R1,000 × 0.712986</span><span>R712.99</span></div>
-        <div class="l tot"><span><b>Value of the bond</b></span><span>R959.00</span></div>
-      </div>
+      <table style="margin-top:0">
+        <thead><tr><th style="width:12%">Year</th><th style="width:20%">Cash flow</th><th>Working</th><th class="r" style="width:20%">PV</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>R60</td><td>60 ÷ (1.07)<sup>1</sup></td><td class="r">R56.07</td></tr>
+          <tr><td>2</td><td>R60</td><td>60 ÷ (1.07)<sup>2</sup></td><td class="r">R52.41</td></tr>
+          <tr><td>3</td><td>R60</td><td>60 ÷ (1.07)<sup>3</sup></td><td class="r">R48.98</td></tr>
+          <tr><td>4</td><td>R60</td><td>60 ÷ (1.07)<sup>4</sup></td><td class="r">R45.77</td></tr>
+          <tr><td>5</td><td>R60</td><td>60 ÷ (1.07)<sup>5</sup></td><td class="r">R42.78</td></tr>
+          <tr><td>5</td><td><b>R1,000</b> <small class="muted">par</small></td><td>1,000 ÷ (1.07)<sup>5</sup></td><td class="r">R712.99</td></tr>
+          <tr><td colspan="3"><b>Value of the bond — total of the PV column</b></td><td class="r"><b>R959.00</b></td></tr>
+        </tbody>
+      </table>
       <div class="ans"><span class="t">Answer</span> <b>R959.00</b> — the bond trades at a <b>discount</b>, because the 6% coupon is
       lower than the 7% yield the market requires.</div>
     </div>
+  </div>
+
+  <div class="exam">
+    <span class="t">Cross-check with Method 1</span> At 7%: R60 × 4.100197 + R1,000 × 0.712986 = R246.01 + R712.99 =
+    <b>R959.00</b> — the same answer the PV column gives. Whichever route you use in the exam, <b>state the method, show the
+    substitution and label the answer</b> premium, par or discount.
   </div>
 
   <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Workbook Answers · 50 marks</span></div>

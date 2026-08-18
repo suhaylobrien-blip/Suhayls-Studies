@@ -1244,6 +1244,56 @@
   <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Summarised Reference · for class</span></div>
 </section>
 
+<!-- ================= 26 · TWO METHODS ================= -->
+<section class="sheet">
+  <div class="sec">Working a bond value — two routes to the same number</div>
+
+  <p>Take the standard exam bond: <b>R1,000 par, 5 years, 6% annual coupon</b> (so R60 a year), valued at a
+  <b>4% discount rate</b>.</p>
+
+  <div class="grid2">
+    <div class="card">
+      <h3>Method 1 — the formula</h3>
+      <p><small>Treat the coupons as an <b>annuity</b> and the par value as a <b>single lump sum</b>:</small></p>
+      <p><small><b>P = C × [1 − (1 + r)<sup>−n</sup>] ÷ r &nbsp;+&nbsp; F × (1 + r)<sup>−n</sup></b></small></p>
+      <div class="kv">
+        <div class="row"><span class="k">R60 × 4.451822</span><span class="v">R267.11</span></div>
+        <div class="row"><span class="k">R1,000 × 0.821927</span><span class="v">R821.93</span></div>
+        <div class="row"><span class="k"><b>Total</b></span><span class="v">R1,089.04</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Method 2 — cash flow by cash flow</h3>
+      <p><small>Write out the <b>actual cash flows</b>, divide each by <b>(1 + r) raised to its own year number</b>, and
+      <b>total the PV column</b>.</small></p>
+      <p><small class="muted">No annuity factor to remember, every line is visible so a slip is easy to spot, and it extends
+      naturally to any irregular cash flow pattern — which is why it is the easier route by hand.</small></p>
+    </div>
+  </div>
+
+  <table>
+    <thead><tr><th style="width:12%">Year</th><th style="width:22%">Cash flow</th><th>Working</th><th class="r" style="width:20%">PV</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>R60</td><td>60 ÷ (1.04)<sup>1</sup></td><td class="r">R57.69</td></tr>
+      <tr><td>2</td><td>R60</td><td>60 ÷ (1.04)<sup>2</sup></td><td class="r">R55.47</td></tr>
+      <tr><td>3</td><td>R60</td><td>60 ÷ (1.04)<sup>3</sup></td><td class="r">R53.34</td></tr>
+      <tr><td>4</td><td>R60</td><td>60 ÷ (1.04)<sup>4</sup></td><td class="r">R51.29</td></tr>
+      <tr><td>5</td><td>R60</td><td>60 ÷ (1.04)<sup>5</sup></td><td class="r">R49.32</td></tr>
+      <tr><td>5</td><td><b>R1,000</b> <small class="muted">par</small></td><td>1,000 ÷ (1.04)<sup>5</sup></td><td class="r">R821.93</td></tr>
+      <tr><td colspan="3"><b>Bond value — total of the PV column</b></td><td class="r"><b>R1,089.04</b></td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <span class="t">Both give R1,089.04</span> Tested against each other — the two methods are the <b>same equation</b>, one written
+    in closed form and one written out term by term. Use <b>Method 2</b> for workings, and Method 1 (or the calculator:
+    <b>N, PMT, FV, I/Y → PV</b>) as the <b>cross-check</b>. For a <b>semi-annual</b> payer the cash flow rows become
+    <b>half-year periods</b>: half the coupon each period, half the rate, and <b>2n rows</b>.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 5 — Interest Bearing Securities &amp; Bonds</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
 <!-- ================= 25 · MATHS I cont ================= -->
 <section class="sheet">
   <div class="sec small">Bond valuation, continued</div>
