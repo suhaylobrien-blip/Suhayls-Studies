@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Module 6 — Derivatives Markets &amp; Alternative Investments (Summarised Reference)</title>
+<link rel="stylesheet" href="pdf-house-style.css">
+<style>
+/* Module 6 is the densest module in the programme — two full chapters in one
+   guide. Tighten the vertical rhythm a notch so a section still lands on one
+   sheet. Type sizes, colours and the rest of the house style are untouched. */
+body{ line-height:1.42; }
+p{ margin:4px 0; }
+li{ margin:2px 0; }
+h3{ margin:11px 0 3px; }
+h4{ margin:9px 0 2px; }
+.sec{ margin:13px 0 9px; padding:8px 12px; }
+.card{ margin:7px 0; padding:11px 14px; }
+.card.tight{ padding:9px 12px; }
+.def,.note,.exam{ margin:7px 0; padding:9px 13px; }
+.formula{ margin:7px 0; padding:11px; }
+table{ margin:7px 0; }
+thead th{ padding:6px 9px; }
+tbody td{ padding:6px 9px; }
+.kv .row{ padding:6px 2px; }
+.grid2{ gap:8px; }
+.chips{ margin:6px 0; }
+.sheet{ padding:15mm 16mm 19mm; }
+.sheet.cover{ padding:16mm 16mm 20mm; }
+</style>
+</head>
+<body>
+
+<!-- ================= 01 · COVER ================= -->
+<section class="sheet cover">
+  <div class="brand">Novia One<span class="dot">.</span></div>
+  <div class="rule"></div>
+
+  <div style="height:54mm"></div>
+
+  <div class="pill">FMP · MODULE 6</div>
+  <div class="eyebrow" style="margin-top:16px">Occupational Certificate · Financial Markets Practitioner</div>
+  <div class="headline">Derivatives &amp; Alternatives,<br><span class="g">at a glance.</span></div>
+  <p class="lead" style="max-width:150mm;margin-top:10px">A condensed, exam-ready reference for the whole module — both chapters,
+  plus the <b>worked numbers that live only in the class deck</b>. Everything here comes from Novia's own study guide and slides,
+  reduced to the definitions, formulas, directions and traps you are most likely to be tested on.</p>
+
+  <div style="height:18mm"></div>
+
+  <div class="card" style="max-width:150mm">
+    <div class="kv">
+      <div class="row"><span class="k">Chapter 1 · §1.1</span><span class="v">Derivative Markets</span></div>
+      <div class="row"><span class="k">Chapter 1 · §1.2</span><span class="v">Forwards &amp; Futures</span></div>
+      <div class="row"><span class="k">Chapter 1 · §1.3</span><span class="v">Options</span></div>
+      <div class="row"><span class="k">Chapter 1 · §1.4</span><span class="v">Swaps</span></div>
+      <div class="row"><span class="k">Chapter 1 · §1.5</span><span class="v">The SA Derivatives Market</span></div>
+      <div class="row"><span class="k">Chapter 2</span><span class="v">Alternative Investments</span></div>
+      <div class="row"><span class="k">Appendix</span><span class="v">Traps, directions &amp; one-page recall</span></div>
+    </div>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 02 · §1.1 WHAT A DERIVATIVE IS ================= -->
+<section class="sheet">
+  <div class="sec">§1.1 · Derivative markets — the foundation</div>
+
+  <div class="def">
+    <span class="term">Derivative</span> — a <b>financial contract whose value is derived from the value of some underlying asset</b>.
+    The underlying may be a share, bond, commodity, currency, interest rate or index — or an <b>outcome</b> (weather, carbon emissions,
+    heating and cooling days). Derivatives manage financial risk, exploit investment opportunities, and create <b>synthetic asset class
+    exposure</b>.
+  </div>
+
+  <div class="exam">
+    <span class="t">Exam watch</span> The <b>primary purpose of derivative markets is the transfer of risk without the need to trade
+    the underlying asset</b>. Learn that phrase verbatim. Size of the global market: <b>≈ US$800 trillion</b>, against <b>≈ US$23
+    trillion</b> for every exchange-listed company in the United States combined.
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <h3>The three main classes</h3>
+      <ul class="tick">
+        <li><b>Forwards / futures</b> — priced off spot plus a basis</li>
+        <li><b>Options</b> — priced off time, volatility, strike</li>
+        <li><b>Swaps</b> — priced by equating the PV of a fixed and a variable stream</li>
+      </ul>
+      <p><small class="muted">Each class has its <b>own pricing mechanism</b> — the exam likes matching the class to its price
+      driver.</small></p>
+    </div>
+    <div class="card">
+      <h3>What moves a derivative's price</h3>
+      <ul class="tick">
+        <li>Price of the underlying</li>
+        <li>Time to maturity</li>
+        <li>Volatility</li>
+        <li>Interest rates</li>
+        <li>Dividends</li>
+        <li>Credit risk &amp; counterparty risk</li>
+        <li>Market conditions — liquidity, depth, transaction costs</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="note">
+    <span class="t">Framing</span> Derivative pricing is a complex process requiring an understanding of the instruments, the
+    mathematical models and market dynamics. It is a <b>fundamental aspect of financial markets</b> — institutions, traders and risk
+    managers all use pricing models to make informed decisions.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 03 · FOUR KEY TERMS ================= -->
+<section class="sheet">
+  <div class="sec">§1.1.6 · The four key terms of a derivative contract</div>
+
+  <table>
+    <thead><tr><th style="width:24%">Term</th><th>What it fixes</th></tr></thead>
+    <tbody>
+      <tr><td><b>Underlying</b></td><td>The asset or outcome the contract is built on. Originally all derivatives were based on
+      <b>tangible assets</b>; some are now based on <b>outcomes</b>. Examples: agricultural products (wheat, rice, soybeans, cotton,
+      butter, milk) · livestock (pigs, cattle) · currencies · interest rates · individual shares and equity indices · bond indices ·
+      economic factors such as the inflation rate · natural resources (crude oil, natural gas, gold, silver, timber) · weather-related
+      outcomes such as heating or cooling days.</td></tr>
+      <tr><td><b>Size and price</b></td><td><b>Size</b> = the amount of the underlying to be exchanged. <b>Price</b> = what the
+      underlying will be bought or sold for — the <b>exercise price</b> or <b>strike price</b>. <b>This is not the current or spot price
+      — it is a price good for future delivery.</b></td></tr>
+      <tr><td><b>Expiration date</b></td><td>All derivatives have a <b>finite life</b>; each contract specifies the date the contract
+      ends. <b>Settlement date is normally two days before final expiration</b>, and settlement instructions are exchanged and confirmed
+      between the counterparties on that date.</td></tr>
+      <tr><td><b>Settlement</b></td><td>How the contract is satisfied at expiration. Some require <b>physical delivery</b> (and then the
+      contract specifies delivery locations); others allow or require <b>cash settlement</b>. Contracts on outcomes such as heating or
+      cooling days <b>cannot</b> be physically delivered and <b>must</b> settle in cash. <b>In practice most derivatives contracts settle
+      in cash.</b></td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <span class="t">Trap</span> The <b>strike price is not the spot price</b>, and <b>settlement date ≠ expiration date</b> — settlement
+    sits two days earlier. Both are favourite one-mark distractors.
+  </div>
+
+  <div class="card">
+    <h3>Users of derivatives — and what they use them for</h3>
+    <p><small>The main users are <b>financial institutions, corporations and institutional investors such as hedge funds</b>.</small></p>
+    <table>
+      <thead><tr><th style="width:24%">Purpose</th><th>Use</th></tr></thead>
+      <tbody>
+        <tr><td><b>Hedging</b></td><td>Protect against price fluctuations in raw materials, exchange rates or interest rates</td></tr>
+        <tr><td><b>Investing</b></td><td>An alternative to investing directly in the assets</td></tr>
+        <tr><td><b>Speculating</b></td><td>Take calculated risks based on future price predictions</td></tr>
+        <tr><td><b>Arbitrage</b></td><td>Exploit price differences between related assets or markets</td></tr>
+        <tr><td><b>Insurance</b></td><td>Protection against adverse events, such as catastrophic events</td></tr>
+      </tbody>
+    </table>
+    <p><small>Other users: <b>margin traders</b> — use borrowed funds to increase their trading positions — and <b>market makers</b>,
+    who ensure there are always buyers and sellers.</small></p>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 04 · OTC vs ETD ================= -->
+<section class="sheet">
+  <div class="sec">§1.1.9 · OTC vs exchange-traded derivatives</div>
+
+  <div class="def">
+    <span class="term">OTC derivative</span> — a financial contract between two parties that is <b>not traded on an exchange</b>.
+    <b>Customised</b> to meet each party's needs and <b>more flexible</b> than an exchange-traded derivative, but potentially
+    <b>riskier due to the lack of regulation</b>.
+  </div>
+
+  <div class="def">
+    <span class="term">Exchange-traded derivative</span> — a <b>standardised</b> contract such as a future or an option, transacted on an
+    <b>organised futures exchange</b>. Standardised, and requiring payment of an <b>initial deposit or margin</b>, settled through a
+    <b>clearing house</b>.
+  </div>
+
+  <table>
+    <thead><tr><th style="width:24%">Key point</th><th>OTC derivatives market</th><th>Exchange-traded market</th></tr></thead>
+    <tbody>
+      <tr><td><b>Nature of the market</b></td><td>Decentralised</td><td>Centralised</td></tr>
+      <tr><td><b>Nature of the contract</b></td><td>Tailored / customised</td><td>Standardised</td></tr>
+      <tr><td><b>Regulation</b></td><td>Not regulated</td><td>Highly regulated</td></tr>
+      <tr><td><b>Counterparty risk</b></td><td>High</td><td>None — the <b>clearing house</b> stands in</td></tr>
+      <tr><td><b>Liquidity</b></td><td>Low (instrument dependent)</td><td>High</td></tr>
+      <tr><td><b>Accessibility</b></td><td>Exclusive — mainly big companies and financial institutions</td><td>Accessible to the general
+      public and to big investors</td></tr>
+      <tr><td><b>Transparency</b></td><td>Lower</td><td>Higher</td></tr>
+      <tr><td><b>Credit risk</b></td><td>Increased</td><td>Lower</td></tr>
+      <tr><td><b>Settlement</b></td><td>At the end of the agreement</td><td><b>Marked to market — settled daily</b></td></tr>
+    </tbody>
+  </table>
+
+  <div class="exam">
+    <span class="t">Exam watch</span> Examples of <b>OTC</b>: <b>swaps</b> (the most common OTC derivative), <b>forward contracts</b>,
+    <b>forex</b>, and a <b>swaption</b>. Other OTC underlyings: interest rates, commodities, equities, foreign exchange rates, fixed
+    income securities, credit risk. Examples of <b>ETD</b>: <b>futures, options, and options on futures</b>.
+  </div>
+
+  <div class="card tight">
+    <h4>The guide's side-by-side</h4>
+    <p><small><b>Exchange-traded contracts</b> have standard terms and trade on an organised derivatives exchange (a futures exchange).
+    They are <b>tradable financial instruments</b>, <b>marked to market (settled daily)</b>, with <b>performance guaranteed by the
+    exchange's clearing house</b>, and are <b>highly liquid with an active secondary market</b> because every contract is standardised.<br>
+    <b>OTC contracts</b> are <b>customised transactions created by two parties</b> through a telephone- and computer-linked dealer
+    network. <b>Financial institutions often act as market makers</b> for the more commonly traded instruments, <b>trades are typically
+    much larger</b> than in the exchange-traded market, and there is <b>usually some default risk</b>.</small></p>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 05 · BENEFITS & CRITICISMS ================= -->
+<section class="sheet">
+  <div class="sec">§1.1.4–1.1.5 · Benefits and criticisms of derivative markets</div>
+
+  <h3>Benefits — three headings</h3>
+  <div class="card">
+    <h4>Price discovery</h4>
+    <p><small>Futures prices can be thought of as a <b>forecast of future spot prices</b> — though in reality they provide only a
+    <b>little more information than the spot price</b>, and they do so <b>efficiently</b>. A futures price also indicates <b>what price
+    would be acceptable to avoid uncertainty</b>.<br>
+    For options, one characteristic of the underlying is <b>volatility</b>; option pricing models let you back out the volatility
+    <b>implied</b> by the option price. <b>Implied volatility is a good measure of general uncertainty in the market — a measure of
+    fear.</b></small></p>
+  </div>
+  <div class="grid2">
+    <div class="card tight">
+      <h4>Operational advantages</h4>
+      <ul class="tick">
+        <li><b>Lower transaction costs</b> than transacting in the equivalent underlying</li>
+        <li><b>Greater liquidity</b> than the underlying market</li>
+        <li><b>Short positions entered into easily</b></li>
+      </ul>
+    </div>
+    <div class="card tight">
+      <h4>Market efficiency</h4>
+      <p><small>When prices deviate from fundamental value, derivatives offer a <b>low-cost way to exploit the mispricing</b> — less
+      capital, lower costs, shorting possible. Investors are <b>far more willing to trade if they can manage their risks</b>, raising
+      participant numbers and therefore <b>market liquidity</b>.</small></p>
+    </div>
+  </div>
+
+  <h3>Criticisms — two headings</h3>
+  <div class="card tight">
+    <h4>Speculation and gambling</h4>
+    <p><small>For hedging to work there <b>must be speculators on the other side of the trade</b> — and the more speculators the market
+    attracts, the <b>cheaper it becomes to hedge</b>. Yet speculators are perceived poorly: short-term traders thought to engage in price
+    manipulation and trading at extreme prices. Profit from short-term trading is <b>taxed more heavily</b> than long-term profit — a way
+    of “punishing” the activity. Many view derivatives trading as <b>legalised gambling</b>, but gambling <b>benefits only a limited
+    number of participants and does not help society as a whole</b>, whereas the derivatives market brings <b>extensive benefits to the
+    financial services industry</b>.</small></p>
+  </div>
+  <div class="card tight">
+    <h4>Destabilisation and systemic risk</h4>
+    <p><small>Opponents argue the operational benefits produce <b>excessive speculative trading</b> and therefore instability.
+    Speculators use <b>large amounts of leverage</b>, exposing themselves and their creditors to high risk; defaults by speculators can
+    lead to defaults by their creditors, and these <b>chain-reaction events can be systemic</b>.<br>
+    The second criticism is <b>complexity</b>: when the models underpinning derivative pricing break down under sometimes irrational
+    market behaviour, <b>the model builders are blamed</b> for failing to capture financial market reality.</small></p>
+  </div>
+
+  <div class="note">
+    <span class="t">Quotable</span> Warren Buffett called derivatives <b>“financial weapons of mass destruction”</b>. The deck's framing:
+    a leveraged instrument can <b>not only reduce risk but create risk</b> through enhanced uncovered exposure. The three legitimate
+    purposes: <b>hedge</b> (contain upside and downside) · <b>insure</b> (retain the upside, limit the downside) · <b>transform</b>
+    assets and liabilities to match future expectations.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 06 · TERMINOLOGY 1 ================= -->
+<section class="sheet">
+  <div class="sec">§1.1.7 · Concepts and terminology (1 of 2)</div>
+
+  <div class="def">
+    <span class="term">Arbitrage</span> — a trading strategy <b>requiring no cash</b> where there is some probability of making a profit
+    <b>without incurring the risk of a loss</b>. The <b>simultaneous purchase and sale of identical or equivalent financial assets</b> to
+    benefit from a discrepancy in their price relationship. A <b>low-risk</b> strategy linked to <b>hedging (risk transference)</b> and
+    <b>speculation (risk acceptance)</b>.
+  </div>
+  <table>
+    <thead><tr><th style="width:26%">Type of arbitrage</th><th>What it trades</th></tr></thead>
+    <tbody>
+      <tr><td><b>True arbitrage</b></td><td>Two assets with an <b>equal fair value</b> trading at <b>different prices</b>.</td></tr>
+      <tr><td><b>Risk arbitrage</b></td><td>An asset <b>currently priced at a value that will soon change</b>.</td></tr>
+      <tr><td><b>Convertible arbitrage</b></td><td>The difference between a bond's <b>conversion price</b> and the current price of the
+      underlying company's shares.</td></tr>
+      <tr><td><b>Triangular arbitrage</b></td><td><b>Three or more currencies</b> traded simultaneously.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="def">
+    <span class="term">Speculation</span> — buying and selling assets to <b>profit from price fluctuations over the short term</b>, as
+    opposed to buying for long-term gains (buy and hold) or income (dividends). Associated with <b>day trading</b>, it relies on
+    <b>market timing</b> and implies a <b>riskier proposition than investing</b>. It can involve any tradable asset — shares, bonds,
+    commodity futures, currencies, cryptocurrency, fine art, collectibles, real estate and financial derivatives. Speculators
+    <b>provide liquidity and help narrow the bid-ask spread</b>.
+  </div>
+
+  <div class="def">
+    <span class="term">Hedging</span> — offsetting the price risk inherent in a spot market position by taking an <b>equal but opposite
+    position in the futures market</b>. Risk is <b>neutralised and transferred</b> to someone for whom holding that risk would
+    <b>reduce an existing but opposite exposure</b>. A counterparty <b>without</b> a pre-existing exposure — a <b>speculator</b> — accepts
+    the risk to benefit from an anticipated price movement.
+    <br><small>Strategies: <b>options hedging</b> (e.g. buy a put to protect against a share price decline) · <b>currency hedging</b>
+    (buy or sell a foreign currency to offset exchange rate effects) · <b>direct hedging</b> (open a position in the opposite direction
+    of an existing trade, e.g. a sell position in the same pair you are long).<br>
+    <b>Hedging is used by short- to mid-term traders and investors — not typically as part of a long-term strategy</b>, because
+    short-term price fluctuations have little impact on buy-and-hold investors.</small>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 07 · TERMINOLOGY 2 ================= -->
+<section class="sheet">
+  <div class="sec">§1.1.7 · Concepts and terminology (2 of 2)</div>
+
+  <div class="def">
+    <span class="term">Marking to market</span> — the mark-to-market process, or <b>margining</b>, ensures that all counterparties
+    <b>meet their obligations</b> under the futures contract. The <b>initial margin determines the level of gearing</b> obtained from
+    entering into a futures contract.
+  </div>
+
+  <div class="def">
+    <span class="term">Volatility</span> — the <b>degree of fluctuation (rate of change)</b> in the price of a security, expressed
+    mathematically as <b>variance or standard deviation, and beta</b>. The greater the volatility, the wider the fluctuations between
+    successive prices over a given period. <b>The volatility of security returns is the measurement used to define risk.</b> High
+    volatility means considerable risk and an increased probability of either a loss or a gain in a short period.
+    <b>Futures markets are traditionally more volatile than spot markets.</b>
+  </div>
+
+  <div class="def">
+    <span class="term">Short selling</span> — a strategy where a security is <b>borrowed and sold</b> with a commitment to
+    <b>purchase and replace it later</b>. A complex, high-risk strategy of selling a security not owned, used to capitalise on an
+    expected decline in price, which can lead to substantial losses if the opposite occurs. There are <b>many restrictions on selling
+    short</b>.
+    <br><small><b>Short selling applies to the spot or cash market. “Going short” or “shorting an asset” applies to the derivatives
+    market.</b></small>
+  </div>
+
+  <div class="def">
+    <span class="term">Market maker</span> — a <b>JSE member</b> — for example the investment banks <b>ABSA, RMB, Investec and Standard
+    Bank</b> — that <b>always quotes bid and ask prices</b> for selected instruments, thereby making or maintaining a market in them.
+    <b>Market makers must cover or hedge their exposure in the futures market with equivalent transactions in the spot market</b> — they
+    buy or sell the client's full long or short exposure in the spot market.
+  </div>
+
+  <div class="exam">
+    <span class="t">Exam watch</span> The two terminology traps that recur: <b>short selling (spot) versus going short (derivatives)</b>,
+    and <b>arbitrage carries no risk of loss and requires no cash</b> — if an answer option describes a strategy with downside risk, it
+    is not arbitrage.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 08 · COMMITMENTS vs CLAIMS ================= -->
+<section class="sheet">
+  <div class="sec">§1.2.1 · Forward commitments vs contingent claims</div>
+
+  <div class="grid2">
+    <div class="card">
+      <h3>Forward commitments</h3>
+      <p><small>Contracts in which the two parties agree to engage in a transaction <b>at a later date at a price established at the
+      start</b>. They create an <b>obligation for both parties</b>. Two major classifications: <b>exchange-traded</b> contracts (futures)
+      and <b>over-the-counter</b> contracts (forwards and swaps).</small></p>
+      <div class="chips"><span class="chip p">Forwards</span><span class="chip p">Futures</span><span class="chip p">Swaps</span></div>
+    </div>
+    <div class="card">
+      <h3>Contingent claims</h3>
+      <p><small>Contracts in which <b>the payoffs occur if a specific event happens</b>. They create the <b>right — but not the
+      obligation</b> — for one party to buy or sell an underlying asset at a fixed price over a specific period.</small></p>
+      <div class="chips"><span class="chip p">Options</span><span class="chip p">Asset-backed securities</span><span class="chip p">Credit derivatives</span></div>
+    </div>
+  </div>
+
+  <div class="exam">
+    <span class="t">Exam watch</span> <b>Forward commitment = obligation. Contingent claim = right.</b> That difference changes the
+    <b>payoff profile</b>, which is why the two trade differently. And <b>a swap is equivalent to a series of forward contracts</b>.
+  </div>
+
+  <table>
+    <thead><tr><th style="width:26%">Instrument</th><th>Characteristic</th></tr></thead>
+    <tbody>
+      <tr><td><b>Forward contracts</b></td><td>Customised agreements</td></tr>
+      <tr><td><b>Futures contracts</b></td><td>Standardised agreements</td></tr>
+      <tr><td><b>Swaps</b></td><td>Equivalent to a <b>series of forward contracts</b></td></tr>
+      <tr><td><b>Options</b></td><td>Give the buyer the right to buy or sell the underlying at a specific price within a certain
+      period</td></tr>
+      <tr><td><b>Call options</b></td><td>Give the buyer the right to <b>buy</b> the underlying</td></tr>
+      <tr><td><b>Put options</b></td><td>Give the buyer the right to <b>sell</b> the underlying</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Forwards vs futures — the six differences</h3>
+  <table>
+    <thead><tr><th style="width:22%"></th><th>Forwards</th><th>Futures</th></tr></thead>
+    <tbody>
+      <tr><td><b>Regulation</b></td><td>Not formally regulated</td><td>Regulated by the <b>JSE / SAFEX</b></td></tr>
+      <tr><td><b>Trading</b></td><td>Over the counter</td><td>On an exchange</td></tr>
+      <tr><td><b>Contract terms</b></td><td>Customisable</td><td>Standardised</td></tr>
+      <tr><td><b>Delivery dates</b></td><td>Usually <b>one</b> specified delivery date</td><td>A <b>range</b> of delivery dates</td></tr>
+      <tr><td><b>Settlement</b></td><td>Settles at the <b>end</b> of the agreement</td><td><b>Settled daily</b> until the end of the
+      contract</td></tr>
+      <tr><td><b>Counterparty risk</b></td><td><b>More</b> counterparty risk</td><td>Less — the clearing house guarantee</td></tr>
+    </tbody>
+  </table>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 09 · FORWARDS ================= -->
+<section class="sheet">
+  <div class="sec">§1.2.6 · Forwards — types, settlement and credit risk</div>
+
+  <div class="def">
+    <span class="term">Forward contract</span> — an <b>over-the-counter derivative contract in which two parties agree that one party,
+    the buyer, will purchase an underlying asset from the other party, the seller, at a later date at a fixed price they agree on when
+    the contract is signed</b>. The parties also agree the <b>identity of the underlying</b>, the <b>number of units</b> to be delivered
+    and <b>where delivery will occur</b>. The contract is <b>customised</b>, and <b>each party is subject to the possibility that the
+    other will default</b>.
+  </div>
+
+  <h3>The four types of forward</h3>
+  <table>
+    <thead><tr><th style="width:26%">Type</th><th>Definition</th></tr></thead>
+    <tbody>
+      <tr><td><b>Equity forwards</b></td><td>Binding agreements to buy or sell a <b>specific stock or the return on a share index</b> at
+      a fixed entry price at a fixed expiry date.</td></tr>
+      <tr><td><b>Fixed-income forwards</b></td><td>An agreement to transact in a fixed-income security at a preset price at a future
+      forward date. <b>Value = bond price − PV of coupon payments − PV of the price at expiration.</b></td></tr>
+      <tr><td><b>Interest rate forwards</b><br><small class="muted">also called <b>FRAs</b></small></td><td>Forecasts that estimate
+      future interest rates, used to plan for economic shifts. <b>Calculated from the spot rate</b> — the rate starting today —
+      <b>adjusted for the cost of carry</b>.</td></tr>
+      <tr><td><b>Currency forwards</b><br><small class="muted">forward exchange contracts, <b>FECs</b></small></td><td>A binding
+      agreement that <b>locks in an exchange rate</b> for a future currency transaction. Privately negotiated and <b>traded OTC</b> in
+      the foreign exchange market.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="grid2">
+    <div class="card tight">
+      <h4>Settling a forward at expiration</h4>
+      <p><small><b>Delivery</b> — the long party pays the agreed-upon price; the short party delivers the underlying asset.<br><br>
+      <b>Cash settlement</b> — the net position is settled:<br>
+      <b>the long receives money when Spot &gt; Future</b><br>
+      <b>the short receives money when Future &gt; Spot</b></small></p>
+    </div>
+    <div class="card tight">
+      <h4>The parties</h4>
+      <p><small>The party that agrees to <b>buy</b> the asset has a <b>long forward position</b>. The party that agrees to <b>sell</b>
+      has a <b>short forward position</b>.<br><br>
+      <b>Dealers</b> are financial institutions quoting bid (buy) and ask (sell) prices, earning the spread. <b>End users</b> are
+      companies or institutions <b>managing risk — locking in a future price</b>.</small></p>
+    </div>
+  </div>
+
+  <div class="note">
+    <span class="t">Credit risk in forward contracts</span> There is credit risk because <b>the counterparty may not deliver the asset at
+    the time of delivery</b>. And because a forward is <b>not exchange traded, a buyer or seller cannot lock in gains or losses on the
+    contract's value before the agreed settlement date — the contract must be held to maturity</b>. Given this, <b>the contract's value
+    serves as the quantification of credit risk</b> for the counterparties.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 10 · FUTURES — DEFINITION ================= -->
+<section class="sheet">
+  <div class="sec">§1.2.7 · Futures — standardisation and the clearinghouse</div>
+
+  <div class="def">
+    <span class="term">Futures contract</span> — a <b>standardised derivative contract created and traded on a futures exchange</b> in
+    which two parties agree that one party, the buyer, will purchase an underlying asset from the other party, the seller, at a later
+    date and at a price agreed on by the two parties when the contract is initiated, <b>and in which there is a daily settling of gains
+    and losses and a credit guarantee by the futures exchange through its clearinghouse</b>.
+  </div>
+
+  <div class="exam">
+    <span class="t">Exam watch</span> The <b>most important distinctive characteristic of a futures contract</b> is the <b>daily
+    settlement of gains and losses and the associated credit guarantee</b> provided by the exchange through its clearinghouse. Learn the
+    full definition above — the three elements in bold are where the marks are.
+  </div>
+
+  <div class="card">
+    <h3>What standardisation buys you</h3>
+    <ul class="tick">
+      <li>Futures are <b>specialised versions of forward contracts</b> that have been <b>standardised and trade on a futures
+      exchange</b></li>
+      <li>Standardised contracts + an organised market with rules and regulations + a <b>central clearing facility</b> deliver
+      <b>liquidity and protection against loss by default</b></li>
+      <li>A futures contract requires a <b>futures exchange</b> — a <b>legally recognised entity</b> providing a market for trading
+      these contracts</li>
+      <li>Futures exchanges are <b>highly regulated at the national level in all countries</b>, and <b>specify that only certain
+      contracts are authorised for trading</b></li>
+      <li>Those contracts have specific <b>underlying assets, times to expiration, delivery and settlement conditions and
+      quantities</b></li>
+      <li>The exchange offers a <b>physical location and/or electronic system</b>, plus <b>liquidity provided by authorised market
+      makers</b></li>
+      <li>Futures are <b>guaranteed by the clearinghouse — no counterparty risk</b>; gains and losses are <b>settled daily (marked to
+      market)</b>; and <b>margin is required as collateral to cover losses</b></li>
+    </ul>
+  </div>
+
+  <div class="note">
+    <span class="t">Contrast with forwards</span> In a forward contract the parties <b>customise everything</b> — the underlying, time to
+    expiration, delivery and settlement conditions and quantity — <b>according to whatever terms they agree</b>. These contracts are
+    <b>not traded on an exchange</b>, and although OTC regulation is increasing, they are <b>not subject to the high degree of regulation
+    that applies to securities and futures markets</b>.
+  </div>
+
+  <p><small class="muted">Like forward markets, futures markets can be used for <b>hedging or speculation</b> — for example a
+  <b>jewellery manufacturer can buy gold futures</b>, hedging the price it will have to pay for one of its key inputs.</small></p>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 11 · MARK TO MARKET & PRICING ================= -->
+<section class="sheet">
+  <div class="sec">§1.2.7 · Mark to market, futures pricing and payoff shape</div>
+
+  <h3>Mark to market — the daily settlement</h3>
+  <p>The agreed-upon price is the <b>futures price</b>. Identical contracts trade on an ongoing basis at different prices, reflecting
+  the passage of time and the arrival of new information — so as the futures price changes, <b>the parties make or lose money</b>.
+  Rising prices <b>benefit the long and hurt the short</b>; falling prices do the reverse.</p>
+  <p>At the end of each day the clearinghouse <b>determines an average of the final futures trades of the day</b> and designates that
+  price the <b>settlement price</b>. All contracts are then <b>marked to the settlement price</b>.</p>
+
+  <div class="card tight">
+    <h4>Worked example — the guide's own</h4>
+    <p><small>The long purchases the contract during the day at a futures price of <b>R120</b>. The settlement price at the end of the
+    day is <b>R122</b>. The long's account is <b>marked for a gain of R2</b> — that amount is <b>credited to his account, with the money
+    coming from the account of the short, who has lost R2</b>. If the futures price decreases instead, the long loses money and is
+    charged with that loss, and the money is <b>transferred to the account of the short</b>.</small></p>
+  </div>
+
+  <h3>Futures pricing — the class deck's formula</h3>
+  <div class="formula">
+    <span class="var">F</span> = <span class="var">S</span> (1 + <span class="var">r</span>)<sup><span class="var">t</span></sup>
+  </div>
+  <p><small class="muted">Deck worked example: spot <b>R120</b>, rate <b>8%</b>, one year → <b>F = 120(1.08)¹ = R129.60</b>. This is the
+  <b>cost-of-carry</b> relationship — the futures price is the spot price carried forward at the financing rate, which is why the guide
+  describes a futures price as <b>“the spot price along with a basis amount”</b>.</small></p>
+
+  <div class="grid2">
+    <div class="card tight">
+      <h4>Payoff shape</h4>
+      <p><small>A futures contract is an <b>obligation</b>, so it exhibits a <b>symmetrical payoff</b> — gain and loss run in both
+      directions without limit. Options, being <b>rights</b>, are <b>asymmetrical</b>: the buyer's loss is capped at the
+      premium.</small></p>
+    </div>
+    <div class="card tight">
+      <h4>Hedge profiles</h4>
+      <p><small><b>Long futures locks in a specific purchase price.</b><br>
+      <b>Short futures locks in a specific selling price.</b><br>
+      Both <b>eliminate any downside (loss)</b> — but also <b>forfeit any upside (gain)</b>.</small></p>
+    </div>
+  </div>
+
+  <div class="exam">
+    <span class="t">Exam watch</span> Mark to market is the mechanism that makes futures <b>credit-safe</b>: the gain of one party is
+    funded <b>daily</b> out of the account of the other, so <b>no large unsettled exposure accumulates</b> — which is precisely what a
+    forward contract does allow.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 12 · OPTIONS — CONCEPTS ================= -->
+<section class="sheet">
+  <div class="sec">§1.3 · Options — definition and concepts</div>
+
+  <div class="def">
+    <span class="term">Option</span> — a derivative contract in which one party, the <b>buyer</b>, pays a sum of money to the other
+    party, the <b>seller or writer</b>, and receives the <b>right to either buy or sell an underlying asset at a fixed price</b>, either
+    on a specific expiration date or at any time prior to it. <b>The purchase price of the option is the premium</b>; sellers of options
+    <b>receive premium income</b>.
+  </div>
+
+  <div class="grid2">
+    <div class="card tight">
+      <h4>Call option</h4>
+      <p><small>Grants the <b>holder (long position)</b> the opportunity to <b>buy</b> the underlying security <b>at a price below the
+      current market price</b>, provided the market price <b>exceeds the call strike</b> before or at expiration.</small></p>
+    </div>
+    <div class="card tight">
+      <h4>Put option</h4>
+      <p><small>Grants the <b>holder (long position)</b> the opportunity to <b>sell</b> the underlying security <b>at a price above the
+      current market price</b>, provided the <b>put strike exceeds the market price</b> before or at expiration.</small></p>
+    </div>
+  </div>
+  <p><small class="muted">In both cases the <b>option seller (short position) receives a payment — the premium — compelling performance
+  at the discretion of the holder</b>. If the holder exercises, the writer must <b>make delivery (call)</b> or <b>take delivery
+  (put)</b>. Combinations of options lead to different exposures; the incentive to contract as long or short centres on <b>perceptions
+  regarding market direction and expectations</b>.</small></p>
+
+  <h3>The six options concepts</h3>
+  <table>
+    <thead><tr><th style="width:26%">Term</th><th>Definition</th></tr></thead>
+    <tbody>
+      <tr><td><b>European-style option</b></td><td>An option that can be exercised and settled <b>only on its expiration date</b>.</td></tr>
+      <tr><td><b>American-style option</b></td><td>An option that can be exercised and settled <b>on or before its expiration date</b> —
+      <b>the most common type</b>.</td></tr>
+      <tr><td><b>Moneyness</b></td><td>The degree to which an option is <b>in the money and likely to be exercised</b>, thereby having a
+      payoff.</td></tr>
+      <tr><td><b>Payoff</b></td><td>The <b>difference between the spot and strike prices</b> when exercised.</td></tr>
+      <tr><td><b>Breakeven price</b></td><td>The spot price at which the holder <b>breaks even — zero profit</b> — after accounting for
+      the cost of obtaining the option.</td></tr>
+      <tr><td><b>Profit or loss</b></td><td>The <b>payoff minus the cost of obtaining the option (the premium)</b>.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 13 · MONEYNESS ================= -->
+<section class="sheet">
+  <div class="sec">§1.3.2 · Moneyness, intrinsic value and time value</div>
+
+  <table>
+    <thead><tr><th style="width:26%"></th><th>Call</th><th>Put</th></tr></thead>
+    <tbody>
+      <tr><td><b>In the money (ITM)</b><br><small class="muted">has <b>intrinsic value</b> — you could exercise immediately for a profit
+      opportunity</small></td><td>Strike is <b>below</b> the current market price</td><td>Strike is <b>above</b> the current market
+      price</td></tr>
+      <tr><td><b>At the money (ATM)</b><br><small class="muted">no moneyness</small></td><td colspan="2">Strike price <b>exactly equals
+      the current price of the underlying</b> — you would <b>neither make nor lose money</b> by exercising</td></tr>
+      <tr><td><b>Out of the money (OTM)</b><br><small class="muted"><b>no intrinsic value, only time value</b></small></td><td>Strike is
+      <b>higher</b> than the current market</td><td>Strike is <b>lower</b> than the market</td></tr>
+    </tbody>
+  </table>
+
+  <p><small><b>Moneyness tells the holder whether exercising will lead to a profit</b>, looking at the value of the option <b>if you
+  were to exercise it right away</b>. Guide example: a call to buy XYZ at <b>R40</b> while XYZ trades at <b>R45</b> is <b>in the
+  money</b> — you could exercise to buy at a discount. <b>The higher the market price relative to a call's strike, the more in the money
+  it is.</b> A call to buy at <b>R50</b> while the shares trade at <b>R45</b> is <b>out of the money</b> — exercising would mean paying
+  more than the market.</small></p>
+
+  <h3>Intrinsic value and time value</h3>
+  <p>The option premium breaks into two components — <b>intrinsic value</b> and <b>speculative or time value (extrinsic value)</b>.</p>
+  <div class="grid2">
+    <div class="formula" style="font-size:11.5pt">Market Price − Strike Price<br><small class="muted">= intrinsic value of a <b>call</b></small></div>
+    <div class="formula" style="font-size:11.5pt">Strike Price − Market Price<br><small class="muted">= intrinsic value of a <b>put</b></small></div>
+  </div>
+  <p><small>In both cases <b>multiply by the number of shares in the contract — typically one hundred</b>. Intrinsic value represents
+  the profit the holder would book if they exercised, took delivery and sold the asset in the current marketplace.</small></p>
+
+  <div class="note">
+    <span class="t">Time value</span> <b>Time value is harder to quantify.</b> The more time before expiry, the more opportunity for the
+    option's moneyness to increase — so <b>time value is higher the longer to expiration, and reduces over time until, at expiration, it
+    reaches R0</b>. American-type options can be exercised at any point up to that date.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 14 · PAYOFFS & WORKED 1-2 ================= -->
+<section class="sheet">
+  <div class="sec">§1.3 · Option payoffs — the formulas and two worked examples</div>
+
+  <div class="grid2">
+    <div class="card tight">
+      <h4>Payoff to the call holder</h4>
+      <p><small><b>Call payoff = max(0, S<sub>T</sub> − X)</b><br>
+      0 if S<sub>T</sub> &lt; X<br>(S<sub>T</sub> − X) if S<sub>T</sub> &gt; X<br>
+      <b>Profit = Payoff − Premium</b></small></p>
+    </div>
+    <div class="card tight">
+      <h4>Payoff to the put holder</h4>
+      <p><small><b>Put payoff = max(0, X − S<sub>T</sub>)</b><br>
+      0 if S<sub>T</sub> &gt; X<br>(X − S<sub>T</sub>) if S<sub>T</sub> &lt; X<br>
+      <b>Profit = Payoff − Premium</b></small></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Worked example 1 — buying a call (guide §1.2.3)</h3>
+    <p><small>One call option contract on ABC covers <b>100 shares</b>. Strike <b>R25</b>, premium paid <b>R150</b>. On expiration date
+    ABC shares are selling for <b>R35</b>.</small></p>
+    <div class="kv">
+      <div class="row"><span class="k">Cost of exercising — 100 × R25</span><span class="v">R2,500</span></div>
+      <div class="row"><span class="k">Sale proceeds — 100 × R35</span><span class="v">R3,500</span></div>
+      <div class="row"><span class="k">Gross profit on the option — R3,500 − R2,500</span><span class="v">R1,000</span></div>
+      <div class="row"><span class="k">Less the premium paid</span><span class="v neg">−R150</span></div>
+      <div class="row"><span class="k"><b>Net profit, excluding transaction costs</b></span><span class="v pos">R850</span></div>
+    </div>
+    <p><small class="muted">A very good return on a R150 investment. <b>The buyer's maximum loss is always limited to the premium</b>
+    and the upside is <b>unlimited</b> — the guide calls this asymmetry <b>“one of the most attractive features of buying
+    options”</b>.</small></p>
+  </div>
+
+  <div class="card">
+    <h3>Worked example 2 — breakeven on a call (class deck)</h3>
+    <p><small>An IBM share trades at <b>R100</b>. An April call has a premium of <b>R5</b> and an exercise price of <b>R100</b>. Ignoring
+    commissions:</small></p>
+    <div class="formula" style="font-size:12pt">Breakeven = Strike + Premium = R100 + R5 = <b>R105</b></div>
+    <p><small class="muted">The share price must rise <b>above R105</b> for the option holder to earn a profit. Between R100 and R105 the
+    option is in the money but the holder is still down on the premium; below R100 it expires worthless and the loss is the R5
+    premium.</small></p>
+  </div>
+
+  <div class="exam">
+    <span class="t">Exam watch</span> A payoff question and a profit question are <b>not the same question</b>. <b>Payoff ignores the
+    premium; profit subtracts it.</b> Read which one is being asked.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 15 · HEDGING WITH OPTIONS ================= -->
+<section class="sheet">
+  <div class="sec">§1.3.2 · Hedging with options · writing calls</div>
+
+  <div class="card">
+    <h3>Worked example 3 — the protective put</h3>
+    <p><small>An investor owns <b>1,000 Sasol shares</b> priced at <b>R28</b>. He is concerned about a possible decline over the next two
+    months and wants protection. He buys <b>ten July R27.50 put option contracts</b>, giving him the right to sell 1,000 shares at
+    R27.50. The put premium is <b>R1 — R100 cost per put</b>.</small></p>
+    <div class="kv">
+      <div class="row"><span class="k">Total cost of the hedging strategy — 10 × R100</span><span class="v neg">R1,000</span></div>
+      <div class="row"><span class="k">Proceeds if exercised — 1,000 × R27.50</span><span class="v">R27,500</span></div>
+      <div class="row"><span class="k"><b>Amount realised once the cost of the options is taken into account</b></span><span class="v">R26,500</span></div>
+    </div>
+    <p><small class="muted">The strategy <b>guarantees the shares can be sold for R27.50 during the life of the option</b>. If Sasol
+    stays <b>above R27.50</b>, the options <b>expire worthless</b> and the R1,000 was the cost of the insurance.</small></p>
+  </div>
+
+  <div class="card tight">
+    <h4>The four principles of hedging with options</h4>
+    <ul class="tick">
+      <li>Hedging means taking a position in some market that will <b>limit or protect the downside</b> in another position</li>
+      <li>Calls and puts allow <b>a great deal of flexibility</b> in creating a hedge</li>
+      <li><b>Protective puts establish a downside floor</b>; <b>selling a call against an existing position generates income while
+      limiting upside potential</b></li>
+      <li>Hedging with options <b>incurs a cost</b> — understand the risks and rewards of each position</li>
+    </ul>
+  </div>
+
+  <h3>Writing calls — covered vs naked</h3>
+  <table>
+    <thead><tr><th style="width:22%">Type</th><th>Position and risk</th></tr></thead>
+    <tbody>
+      <tr><td><b>Covered call</b></td><td>The seller <b>actually owns the underlying stock</b>. Selling calls on stock you own produces
+      <b>additional income</b> and <b>offsets expected declines</b> in the price. The seller is <b>“covered” against a loss</b> — if the
+      buyer exercises, he delivers shares he already owns. <b>His profit is limited to the stock's rise to the strike price</b>, but he
+      is <b>protected against any actual loss</b>.</td></tr>
+      <tr><td><b>Naked call</b></td><td>The seller <b>does not own</b> the underlying. <b>Very risky — there is no limit to how high a
+      share price can go</b>, and the seller is not covered. On exercise the naked seller <b>must buy the stock at the current market
+      price</b> to deliver; <b>the difference between market price and strike is his loss</b>. Most option sellers <b>charge a high fee
+      to compensate</b>.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <span class="t">The writer's side generally</span> The call seller's downside is <b>potentially unlimited</b> — as spot exceeds the
+    strike the writer's loss <b>equals the buyer's profit</b>. If the market price never goes higher than the strike, <b>the option
+    expires worthless and the seller keeps the premium</b>. Deck example: a call on RBC with a <b>R10 premium</b> and a <b>R100
+    strike</b> — the buyer loses R10 if RBC does not rise past R100; <b>the writer is in the money as long as the share stays below
+    R110</b>. For the equivalent put, the <b>writer is in the money while the share stays above R90</b>.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 16 · SIX FACTORS ================= -->
+<section class="sheet">
+  <div class="sec">§1.3.3 · The six factors that determine an option's price</div>
+
+  <p class="lead">This table is the highest-yield page in the chapter. The exam tests <b>direction</b>: does the factor push the call up
+  or down, and the put up or down.</p>
+
+  <table>
+    <thead><tr><th style="width:25%">Factor</th><th class="r" style="width:10%">Call</th><th class="r" style="width:10%">Put</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td><b>↑ Price of the underlying</b></td><td class="r pos">↑</td><td class="r neg">↓</td>
+      <td>A higher underlying means <b>greater intrinsic value</b> for a call. <b>For puts the relationship is reversed.</b></td></tr>
+      <tr><td><b>↑ Exercise (strike) price</b></td><td class="r neg">↓</td><td class="r pos">↑</td>
+      <td>A higher exercise price is worse for a <b>right to buy</b> and better for a <b>right to sell</b>.</td></tr>
+      <tr><td><b>↑ Risk-free rate</b></td><td class="r pos">↑</td><td class="r neg">↓</td>
+      <td>Reflects <b>borrowing costs</b>. An increase raises call values and lowers put values.</td></tr>
+      <tr><td><b>↑ Volatility of the underlying</b></td><td class="r pos">↑</td><td class="r pos">↑</td>
+      <td><b>Both rise.</b> <b>Volatility is what makes options valuable</b> — with no volatility, options would always equal their
+      intrinsic value and <b>time value would be zero</b>.</td></tr>
+      <tr><td><b>↑ Time to expiration</b></td><td class="r pos">↑</td><td class="r pos">↑</td>
+      <td><b>Both rise.</b> Volatility is expressed <b>per unit of time</b>, so more time effectively increases expected volatility and
+      gives <b>higher chances of the option moving in the money</b>.</td></tr>
+      <tr><td><b>↑ Costs and benefits of holding the asset</b><br><small class="muted">dividends, interest, convenience yield</small></td>
+      <td class="r neg">↓</td><td class="r pos">↑</td>
+      <td>A cash benefit <b>reduces the value of the asset itself</b> — a dividend or coupon lowers the asset's value — and a fall in
+      the underlying <b>decreases call values and increases put values</b>.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="exam">
+    <span class="t">Exam watch</span> <b>Only two factors move calls and puts in the same direction: volatility and time to
+    expiration.</b> Every other factor moves them in opposite directions. If you remember nothing else on this page, remember that.
+  </div>
+
+  <div class="grid2">
+    <div class="card tight">
+      <h4>Option pricing models</h4>
+      <p><small>The <b>Black-Scholes model</b> is <b>the most widely known model</b> used to determine the reasonable value of an option.
+      Other models include the <b>binomial</b> and <b>trinomial</b> models.</small></p>
+      <p><small class="muted">Option prices can be <b>more volatile than share prices</b>, which is what attracts traders — but some
+      option strategies carry minimal risk and can even <b>enhance stock returns</b>.</small></p>
+    </div>
+    <div class="card tight">
+      <h4>Deck mechanics — the $1.55 pair</h4>
+      <p><small>You hold a <b>call</b> struck at <b>$90</b>, market <b>$91</b> → <b>exercise</b>: why pay more when you have something
+      that lets you buy cheaper?<br>
+      You hold a <b>put</b> struck at <b>$91</b>, market <b>$90</b> → <b>exercise</b>: why get less when you have something that lets you
+      sell higher?<br>
+      In each case the <b>only loss possible is the $1.55 premium already paid</b>.</small></p>
+    </div>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 17 · SWAPS 1 ================= -->
+<section class="sheet">
+  <div class="sec">§1.4 · Swaps — definition and interest rate swaps</div>
+
+  <div class="def">
+    <span class="term">Swap</span> — an <b>over-the-counter derivative contract in which two parties agree to exchange a series of cash
+    flows</b> whereby one party pays a <b>variable series determined by an underlying asset or rate</b> and the other pays either
+    <b>(1) a variable series determined by a different underlying asset or rate</b>, or <b>(2) a fixed series</b>.
+  </div>
+
+  <div class="grid2">
+    <div class="card tight">
+      <h4>Key characteristics</h4>
+      <p><small><b>Cash flows</b> — one is fixed, the other variable, based on an index price, interest rate or exchange rate.
+      <b>Principal</b> — the principal amount <b>usually does not change hands</b> during or at the end of the swap. <b>Trading</b> —
+      OTC or on security-based <b>Swap Execution Facilities (SEFs)</b>. <b>Types</b> — the most common are <b>interest rate and currency
+      swaps</b>.</small></p>
+    </div>
+    <div class="card tight">
+      <h4>Where a swap sits</h4>
+      <p><small>A swap is <b>more like a forward contract — a series of forward contracts — than a futures contract</b>: it is an OTC
+      contract, <b>privately negotiated and subject to default</b>. Other terms — the identity of the underlying, payment dates and
+      payment procedure — are <b>negotiated between the parties and written into the contract</b>.</small></p>
+    </div>
+  </div>
+
+  <div class="def">
+    <span class="term">Interest rate swap</span> — a forward contract in which <b>one stream of future interest payments is exchanged for
+    another based on a specified principal amount</b>. Usually a <b>fixed rate payment is exchanged for a floating rate payment, or vice
+    versa</b>, to reduce or increase exposure to interest rate fluctuations, or to obtain a <b>marginally lower interest rate</b> than
+    would otherwise be possible. Also called <b>plain vanilla swaps</b>, being the original and simplest such instruments.
+  </div>
+
+  <h3>The three types of interest rate swap</h3>
+  <table>
+    <thead><tr><th style="width:22%">Type</th><th>Structure</th></tr></thead>
+    <tbody>
+      <tr><td><b>Fixed-to-floating</b></td><td>A company that can issue a bond at an <b>attractive fixed rate</b> but wants better cash
+      flow from a floating rate enters a swap in which it <b>receives a fixed rate and pays a floating rate</b>. The swap is
+      <b>structured to match the maturity and cash flow of the fixed-rate bond</b>, and the two payment streams are <b>netted</b>. The
+      company receives <b>SOFR plus or minus a spread</b> reflecting both market interest rate conditions and its <b>credit
+      rating</b>.</td></tr>
+      <tr><td><b>Floating-to-fixed</b></td><td>A company with <b>no access to a fixed-rate loan</b> borrows at a floating rate and enters
+      a swap to <b>acquire a fixed rate</b>. The loan's <b>floating-rate tenor, reset and payment dates are mirrored on the swap and
+      netted</b>, and <b>the fixed-rate leg of the swap becomes the company's borrowing rate</b>.</td></tr>
+      <tr><td><b>Float-to-float</b><br><small class="muted">known as a <b>basis swap</b></small></td><td>Changes the <b>type or tenor of
+      the floating rate index</b> paid — for example from <b>three-month SOFR to six-month SOFR</b> because the rate is more attractive
+      or matches other payment flows, or to a different index such as the <b>federal funds rate, commercial paper or the Treasury bill
+      rate</b>.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="exam">
+    <span class="t">Exam watch</span> <b>The Secured Overnight Financing Rate (SOFR) replaced LIBOR</b> as the benchmark index for
+    interest rate swaps. And a <b>received-fixed swap should be treated as buying a fixed-rate bond and issuing a floating-rate
+    bond</b>.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 18 · SWAPS 2 ================= -->
+<section class="sheet">
+  <div class="sec">§1.4.4–1.4.6 · Currency swaps, swaptions and CDS</div>
+
+  <div class="card tight">
+    <h4>The five motivations for a swap</h4>
+    <p><small><b>Hedging against interest rate risk</b> — convert fixed-rate debt into floating, or vice versa · <b>customising cash
+    flow</b> to align with financial goals · <b>accessing new markets</b> and rates otherwise unavailable · <b>optimising debt
+    structure</b> · <b>converting foreign currency payments</b> into local currency for bonds issued abroad.<br>
+    As in most financial transactions, a <b>swap dealer sits between the two parties and takes a commission on the trade</b>. Deck
+    example of a plain vanilla swap: <b>Company A pays LIBOR + 1.1% while Bank B pays a fixed 4.7%</b>.</small></p>
+  </div>
+
+  <div class="card">
+    <h3>Currency swaps</h3>
+    <p><small>Guide example: <b>Party A pays Party B $10 million in return for €9.8 million.</b> On each settlement date <b>Party A, who
+    received euros, pays 6% interest in euros on €9.8 million</b>, and <b>Party B pays 5% interest on the $10 million received</b>.
+    <b>There is no netting of payments — they are in different currencies.</b></small></p>
+    <p><small><b>Motivation:</b> a company wants to establish operations in a foreign country and finance the costs in that currency, but
+    it is <b>more expensive to issue debt in the foreign country</b>. It issues debt in its local currency and enters a currency swap to
+    exchange for the foreign currency; <b>the counterparty faces a similar situation in reverse</b>, and an intermediary swap dealer
+    facilitates. Currency swaps also let a company <b>transform a foreign currency bond into a domestic obligation</b> — a receive-fixed
+    foreign currency, pay fixed or floating domestic currency swap — and likewise transform a foreign investment into a domestic
+    one.</small></p>
+    <p><small><b>The four possible types:</b> pay fixed on foreign / receive fixed on local · pay floating on foreign / receive fixed on
+    local · pay fixed on foreign / receive floating on local · pay floating on foreign / receive floating on local.</small></p>
+  </div>
+
+  <div class="def">
+    <span class="term">Swaption</span> — <b>an option on a swap</b>: an option to <b>enter into a swap at a fixed rate</b>. The most
+    widely used is the <b>plain vanilla interest rate swaption</b>. It lets the holder <b>establish a fixed rate on the underlying swap
+    in advance</b> and then choose either to enter the swap at that rate or <b>let the swaption expire</b> and enter at the prevailing
+    market rate.
+    <br><small><b>Payer swaption</b> — an option on a swap to <b>pay fixed and receive floating</b>; the buyer <b>hopes the fixed rate
+    goes up</b> before expiry. <b>Receiver swaption</b> — an option to <b>receive fixed and pay floating</b>; the buyer <b>hopes the
+    fixed rate goes down</b>.<br>
+    Two motivations: <b>to change the pattern of payments on an upcoming fixed-income obligation</b> — a payer swaption protects against
+    a rate increase, and if the market rate at expiry is below the contract rate the buyer <b>walks away and pays the lower market
+    rate</b> — and <b>to terminate a swap position</b>, the swaption acting as an insurance policy if the original swap goes wrong.
+    As with all options, <b>the buyer pays a premium for this asymmetric payoff — the right to walk away</b>.</small>
+  </div>
+
+  <div class="note">
+    <span class="t">Credit default swap (CDS)</span> A <b>credit derivative contract enabling investors to swap credit risk</b> on a
+    company, country or other entity with another counterparty. <b>The most common type of OTC credit derivative</b>, often used to
+    <b>transfer credit exposure on fixed income products in order to hedge risk</b>. If a lender fears a borrower will default, it
+    <b>buys a CDS from another investor who agrees to reimburse it if the borrower defaults</b>. <b>Most CDS require an ongoing premium
+    payment to maintain the contract — like an insurance policy.</b>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 19 · SA MARKET 1 ================= -->
+<section class="sheet">
+  <div class="sec">§1.5 · The derivatives market in South Africa — the agencies</div>
+
+  <div class="exam">
+    <span class="t">Exam watch</span> South Africa's derivatives market is <b>the only one in Sub-Saharan Africa</b>. Like other emerging
+    derivatives markets, its development <b>stemmed primarily from the need to “self-insure” against volatile capital flows</b> and to
+    manage the financial risk associated with the <b>high volatility of asset prices</b> — not simply from a wish to deepen the market.
+  </div>
+
+  <h3>The four key agencies</h3>
+  <table>
+    <thead><tr><th style="width:30%">Agency</th><th>Role</th></tr></thead>
+    <tbody>
+      <tr><td><b>FSCA</b><br><small class="muted">Financial Sector Conduct Authority</small></td>
+      <td>Established by the <b>Financial Sector Regulation Act 9 of 2017</b> to become a <b>dedicated market conduct authority</b>,
+      replacing the <b>Financial Services Board (FSB) on 1 April 2018</b>. Supervises the activities of <b>non-bank financial
+      institutions</b> and other financial services.</td></tr>
+      <tr><td><b>The Capital Markets Department of the FSCA</b></td>
+      <td>Responsible for the supervision of <b>licensed exchanges, central securities depositories and clearing houses</b>.</td></tr>
+      <tr><td><b>The JSE and the BESA</b></td>
+      <td>Licensed exchanges trading in derivative instruments, <b>supervised by the FSCA</b>. When the JSE <b>took over the business
+      operations of SAFEX in 2001</b>, two divisions were created within the JSE: the <b>Equity Derivatives Division</b> and the
+      <b>Agricultural Products Division</b>.</td></tr>
+      <tr><td><b>The SAFEX Clearing Company</b></td>
+      <td>Under the direction of the JSE and <b>licensed to clear transactions in derivatives traded on the JSE</b>.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="card tight">
+    <h4>Why a derivatives market matters — and what it costs</h4>
+    <p><small>Derivatives markets <b>facilitate the management of financial risk exposure</b> because they let investors <b>unbundle and
+    transfer financial risk</b>. In principle they contribute to a <b>more efficient allocation of capital and cross-border capital
+    flow</b>, create <b>more opportunities for portfolio diversification</b>, and facilitate <b>risk transfer, price discovery and more
+    public information</b>.<br>
+    South Africa's market <b>has grown rapidly</b>, supporting capital inflows and helping participants price, unbundle and transfer
+    risk — but <b>the risks associated with misuse have also increased</b>. There are <b>tight regulations on asset allocations by
+    insurance and pension funds</b> to prevent excessive risk taking, and <b>such regulations can constrain the potential benefits</b>
+    the local derivatives market could bring. <b>Misuse can lead to a financial crisis, accelerate capital outflows and amplify
+    volatility — but the advantages should not be discounted.</b></small></p>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 20 · SA MARKET 2 ================= -->
+<section class="sheet">
+  <div class="sec">§1.5 · Who trades what, and where</div>
+
+  <p>Trading in South Africa's derivatives takes place <b>both in the over-the-counter market and on the established stock
+  exchanges</b>.</p>
+
+  <table>
+    <thead><tr><th style="width:46%">Instrument</th><th>Venue</th></tr></thead>
+    <tbody>
+      <tr><td>Warrants, equity futures and options, agricultural commodity futures and options</td><td><b>The JSE</b></td></tr>
+      <tr><td>Fixed-income derivatives — bond futures, FRAs, vanilla swaps and standard bond options</td><td><b>The BESA</b></td></tr>
+      <tr><td>Interest rate futures and options</td><td><b>Both exchanges</b></td></tr>
+      <tr><td>Currency futures and fixed-income derivatives such as interest rate futures</td><td>Concentrated in the <b>OTC
+      market</b></td></tr>
+      <tr><td>Exchange-based interest rate futures and options — <b>commenced 2003</b></td><td>BESA, through <b>Intersec</b>, a
+      fixed-income derivative platform</td></tr>
+      <tr><td>Exchange-based currency futures — <b>commenced 2007</b></td><td>The JSE currency futures exchange platform
+      <b>Yield-X</b></td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <span class="t">Regulatory nuance — worth a mark on its own</span> <b>Unlike the BESA, the JSE regulates exchange trading in
+    derivative instruments.</b> The BESA instead <b>provides the platform and regulates a range of derivative instruments on both the
+    exchange and the OTC market for fixed-income derivatives, through Intersec</b>.
+  </div>
+
+  <div class="card tight">
+    <h4>Transparency</h4>
+    <p><small><b>Market activities in the organised exchanges are more transparent than in the OTC markets.</b> Derivative instruments
+    traded on the floor of the JSE and the BESA are <b>standardised and transparent</b>. With the exception of OTC arrangements on
+    Intersec, <b>derivative instruments traded on OTC markets are privately negotiated and bilaterally arranged</b>.</small></p>
+  </div>
+
+  <div class="exam">
+    <span class="t">Exam watch · the dates</span> <b>SAFEX absorbed by the JSE — 2001. Interest rate futures on BESA via Intersec —
+    2003. Currency futures on Yield-X — 2007. FSCA replaces the FSB — 1 April 2018, under the Financial Sector Regulation Act 9 of
+    2017.</b>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 21 · CH2 FRAME ================= -->
+<section class="sheet">
+  <div class="sec">Chapter 2 · §2.1 Alternative investments — the frame</div>
+
+  <div class="def">
+    <span class="term">Alternative investments</span> — collectively, the many asset classes that <b>fall outside the traditional
+    definitions of stocks and bonds</b>. They differ from traditional investments (publicly traded stocks, bonds, cash) <b>both in the
+    types of assets and securities included and in the structure of the investment vehicles</b> in which those assets are held.
+  </div>
+
+  <div class="chips">
+    <span class="chip p">Hedge funds</span><span class="chip p">Private equity</span><span class="chip p">Real estate</span>
+    <span class="chip p">Commodities</span><span class="chip p">Infrastructure</span><span class="chip">Other — primarily collectibles</span>
+  </div>
+
+  <div class="card">
+    <h3>Five distinguishing characteristics</h3>
+    <ul class="tick">
+      <li><b>Lower liquidity</b> — due to their <b>lack of standard markets</b> and limited activity on both sides of the deal</li>
+      <li><b>Less regulation</b> — but <b>unique legal and tax considerations</b></li>
+      <li><b>Lower transparency</b> — certain alternatives <b>lack an efficient market mechanism</b>, subjecting valuation to
+      speculation; risk increases in the <b>absence of ready valuation information</b></li>
+      <li><b>Higher fees</b> — costs of purchase and sale may be relatively high</li>
+      <li><b>Limited and potentially problematic historical risk and return data</b> — higher-than-normal returns may be subject to a
+      <b>variety of biases</b>, and <b>the volatility of returns tends to be underestimated</b></li>
+    </ul>
+  </div>
+
+  <h3>The three key reasons for adding them to a portfolio</h3>
+  <table>
+    <thead><tr><th style="width:30%">Reason</th><th>Rationale</th></tr></thead>
+    <tbody>
+      <tr><td><b>Reduced risk through diversification</b></td><td><b>The primary goal.</b> One distinguishing feature of most
+      alternatives is their <b>lack of correlation with public equities and public fixed income</b>. A portfolio containing a variety of
+      alternative assets may offer <b>reduced risk without a proportionate reduction in expected return</b>.</td></tr>
+      <tr><td><b>Enhanced return through alpha</b></td><td>Acquiring assets that offer <b>reasonable expectations of alpha — superior
+      risk-adjusted returns</b>. Hedge funds and private equity have a track record of offering such opportunities.</td></tr>
+      <tr><td><b>Avoiding obsolescence</b></td><td>The asset classes viewed as appropriate for institutional investing <b>have changed
+      dramatically over time</b> and will keep changing. <b>Institutions that are the last adopters will find prices have already
+      adjusted and the greatest opportunities missed.</b></td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <span class="t">Management style</span> Portfolio managers invest either <b>passively</b> — index or asset-class coverage, which some
+    real estate, commodity and infrastructure portfolios use — or <b>actively</b>. <b>Alternative investments are generally actively
+    managed.</b> Beware the <b>naive attraction</b> of expected returns without consideration of their <b>non-typical risks</b>: low
+    liquidity, limited redemption availability, limited transparency and the challenge of manager diversification.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 22 · SIX CATEGORIES ================= -->
+<section class="sheet">
+  <div class="sec">§2.1.3 · The categories of alternative investments</div>
+
+  <table>
+    <thead><tr><th style="width:20%">Category</th><th>What it covers</th></tr></thead>
+    <tbody>
+      <tr><td><b>Hedge funds</b></td><td>May <b>use leverage, hold long and short positions, use derivatives and invest in illiquid
+      assets</b>. Managers use a great many different strategies to generate investment gains. <b>They do not necessarily hedge risk as
+      the name might imply.</b></td></tr>
+      <tr><td><b>Private equity funds</b></td><td>Invest in the equity of <b>companies that are not publicly traded</b>, or in publicly
+      traded firms the fund <b>intends to take private</b>. <b>Leveraged buyout (LBO) funds</b> use borrowed money to purchase equity in
+      established companies and <b>comprise the majority</b> of private equity investment funds. A much smaller portion, <b>venture
+      capital funds</b>, invest in or finance <b>young unproven companies</b> at various early stages. Investing in the securities of
+      <b>financially distressed companies</b> is also treated as private equity here, though hedge funds may hold these too.</td></tr>
+      <tr><td><b>Real estate</b></td><td><b>Residential or commercial properties</b> as well as <b>real-estate-backed debt</b>. Held in a
+      variety of structures: full or leveraged ownership of individual properties, individual real-estate-backed loans, private and
+      publicly traded securities backed by <b>pools of properties or mortgages</b>, and <b>limited partnerships</b>.</td></tr>
+      <tr><td><b>Commodities</b></td><td>Exposure through <b>physical commodities, commodities derivatives, or the equity of
+      commodity-producing firms</b>. Some funds seek the returns of <b>commodity indices</b>, often by holding derivatives contracts
+      expected to track a specific index.</td></tr>
+      <tr><td><b>Infrastructure</b></td><td><b>Long-lived assets that provide public services.</b> <b>Economic</b> infrastructure —
+      roads, airports, utility grids. <b>Social</b> infrastructure — schools, hospitals. Often financed and constructed by governmental
+      entities, but more recently undertaken by <b>private-public partnerships</b>, each holding a significant stake.</td></tr>
+      <tr><td><b>Other</b></td><td><b>Tangible collectible assets</b> — fine wines, stamps, automobiles, antique furniture and art —
+      <b>as well as patents, an intangible asset</b>.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="exam">
+    <span class="t">Exam watch</span> Three category facts the exam likes: <b>LBO funds are the majority of private equity</b>;
+    <b>infrastructure splits into economic and social</b>; and <b>“other” includes patents</b> — an intangible sitting among the tangible
+    collectibles.
+  </div>
+
+  <p><small class="muted">Each of these has <b>unique characteristics requiring a different approach by the analyst</b> — different
+  strategies, fee structures, due diligence, and issues in <b>valuing and calculating returns</b>.</small></p>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 23 · RISKS & STRUCTURE ================= -->
+<section class="sheet">
+  <div class="sec">§2.1.5–2.1.6 · Risks and the partnership structure</div>
+
+  <h3>The four risks of alternative asset funds</h3>
+  <table>
+    <thead><tr><th style="width:30%">Risk</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr><td><b>Market risk</b></td><td>Related to the <b>overall stock market trend</b> — the funds may experience <b>sharp short-term
+      fluctuations in value</b>.</td></tr>
+      <tr><td><b>Geographical concentration</b></td><td>The rise or fall in value of investments concentrated in a specific
+      <b>geographical region</b> may <b>deviate considerably from the overall stock market trend</b>.</td></tr>
+      <tr><td><b>Liquidity risk</b></td><td>Associated with <b>exceptional market situations</b> — if the securities the funds have
+      invested in <b>cannot be converted into cash on the desired schedule or for a reasonable price</b>.</td></tr>
+      <tr><td><b>Exchange-rate risk</b></td><td>The <b>higher the number of investments in foreign currencies</b> and the more those
+      currencies fluctuate, the higher the exchange risk. <b>Weakening of the currencies of the fund's investments has a negative impact
+      on the fund's value; strengthening has a positive impact.</b></td></tr>
+    </tbody>
+  </table>
+  <p><small class="muted">The value of alternative asset funds is calculated <b>daily</b>, based on the <b>current market value of the
+  securities the funds own</b>. Fund values <b>may fluctuate and deviate significantly from the overall market trend</b>.</small></p>
+
+  <h3>The partnership structure</h3>
+  <p><small>A <b>partnership structure is common for many alternative investments</b> — hedge funds, infrastructure funds and private
+  equity funds. The <b>fund manager is the general partner (GP)</b> and <b>investors are limited partners (LPs)</b>.</small></p>
+  <div class="grid2">
+    <div class="card tight">
+      <h4>General partner (GP)</h4>
+      <p><small>The fund manager. <b>Runs the business and theoretically bears unlimited liability</b> for anything that might go
+      wrong.</small></p>
+    </div>
+    <div class="card tight">
+      <h4>Limited partners (LPs)</h4>
+      <p><small>The investors. <b>Own a fractional interest in the partnership</b> based on their investment amount and the terms of the
+      partnership documentation.</small></p>
+    </div>
+  </div>
+  <div class="card tight">
+    <h4>Why the structure matters</h4>
+    <p><small>Limited partnerships are <b>restricted to investors expected to understand and to be able to assume the risks</b>. Because
+    they are <b>not offered to the general public they are less regulated</b> than public offerings. They are <b>frequently located in
+    tax-efficient locations</b>, which benefits both the GP and the LPs, and funds set up as private investment partnerships
+    <b>typically have a limit on the number of LPs</b>.</small></p>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 24 · FEES ================= -->
+<section class="sheet">
+  <div class="sec">§2.1.7 · The fee structure</div>
+
+  <p class="lead">Four terms you must be able to define and distinguish. They recur in the hedge fund chapter and carry the calculation
+  marks.</p>
+
+  <table>
+    <thead><tr><th style="width:26%">Term</th><th>Definition</th></tr></thead>
+    <tbody>
+      <tr><td><b>Management fee</b><br><small class="muted">sometimes called the <b>“base fee”</b></small></td>
+      <td>Based on <b>assets under management</b>. <b>Earned regardless of investment performance.</b></td></tr>
+      <tr><td><b>Incentive fee</b><br><small class="muted">or <b>performance fee</b></small></td>
+      <td>Based on <b>realised profits</b>.</td></tr>
+      <tr><td><b>Hurdle rate</b></td><td>A <b>specified return the fund must achieve before the incentive fee is earned</b>. Set either
+      as a percentage (e.g. 4%) or a rate plus a premium (e.g. LIBOR + 2%).<br>
+      <b>Hard hurdle rate</b> — incentive fees are earned <b>only on returns in excess of the benchmark</b>.<br>
+      <b>Soft hurdle rate</b> — incentive fees are paid <b>on all profits, but only if the hurdle rate is met</b>.</td></tr>
+      <tr><td><b>High-water mark</b></td><td>The <b>highest cumulative return — the highest value, net of fees — of the fund investment
+      by the individual LP</b>, previously recorded. <b>The incentive fee is not paid on gains that merely offset prior losses</b>:
+      incentive fees are only paid to the extent the current value is <b>above the highest value after fees previously recorded</b>.
+      <b>Not all LPs will have the same high-water mark</b>, because it depends on the timing of their individual investment.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="exam">
+    <span class="t">Exam watch</span> The examinable purpose of the high-water mark is one sentence: <b>it protects clients from paying
+    twice for the same performance</b>. And the hard/soft distinction: <b>hard = only the excess is fee-bearing; soft = everything is
+    fee-bearing once the hurdle is cleared</b>.
+  </div>
+
+  <div class="card tight">
+    <h4>How the pieces fit together</h4>
+    <p><small>Funds are generally structured with a <b>management fee based on assets under management</b> plus an <b>incentive fee based
+    on realised profits</b>. Sometimes the structure specifies that the <b>incentive fee is earned only after the fund achieves a
+    specified return — the hurdle rate</b>. Fee calculations also take into account the <b>high-water mark</b>. Note too that the
+    incentive fee may be calculated <b>on profits net of management fees</b>, or <b>on profits before management fees</b> — that is, the
+    incentive fee calculated <b>independent of</b> management fees. <b>Read which basis the question specifies.</b></small></p>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 25 · HEDGE FUNDS — CHARACTERISTICS ================= -->
+<section class="sheet">
+  <div class="sec">§2.2 · Hedge funds — what they are</div>
+
+  <div class="def">
+    <span class="term">Hedge fund</span> — an <b>investment fund that pools capital from individual or institutional investors</b>,
+    administered by a <b>professional investment management firm</b>, investing across assets ranging from vanilla to complex.
+    A contemporary hedge fund is an <b>aggressively managed portfolio of investments across asset classes and regions that is leveraged,
+    takes long and short positions, and/or uses derivatives</b>, with a goal of <b>generating high returns — either in an absolute sense
+    or over a specified market benchmark — and few, if any, investment restrictions</b>.
+  </div>
+
+  <div class="card">
+    <h3>Structural characteristics</h3>
+    <ul class="tick">
+      <li>Set up as a <b>private investment partnership open to a limited number of investors</b> willing and able to make a <b>large
+      initial investment</b></li>
+      <li><b>Restrictions on redemptions</b> — investors may be required to keep money in the fund for a minimum period, the <b>lockup
+      period</b>, before they may withdraw or redeem shares</li>
+      <li>Investors may be required to <b>give notice of intent to redeem — typically 30 to 90 days</b> — and <b>may be charged a fee to
+      redeem</b> shares</li>
+      <li>Managers typically invest <b>a significant amount of personal capital — in some cases in excess of 50% of the total assets in
+      the fund</b> — aligning their interests with those of investors</li>
+      <li>Investors <b>share the partnership's income, expenses, gains and losses</b>, each partner <b>taxed according to their
+      respective share</b></li>
+      <li>Hedge funds aim to <b>consistently achieve positive returns under all market conditions</b>, and <b>do not necessarily hedge
+      all risk as the name might imply</b></li>
+    </ul>
+  </div>
+
+  <div class="grid2">
+    <div class="card tight">
+      <h4>Investment manager</h4>
+      <p><small><b>Determines strategy, makes investing decisions and allocations, and manages portfolio risk.</b> The manager is also
+      <b>invested in the fund</b> and is compensated via a <b>management fee plus a performance fee</b> based on the fund's annual
+      performance. <b>Managers only get a performance fee if the fund makes money above a certain benchmark.</b></small></p>
+    </div>
+    <div class="card tight">
+      <h4>Prime broker</h4>
+      <p><small>Funds <b>must secure their loans with collateral</b> to gain margin and execute trades. Each broker — usually a
+      <b>large securities firm</b> — uses <b>its own risk matrix</b> to determine how much to lend each client. <b>Brokers are themselves
+      subject to regulations, which act as indirect regulations on the hedge funds doing business with them.</b></small></p>
+    </div>
+  </div>
+
+  <div class="note">
+    <span class="t">Funds of hedge funds</span> Funds that <b>hold a portfolio of hedge funds</b>, creating a diversified portfolio
+    accessible to <b>smaller investors</b> or to those <b>without the resources, time or expertise</b> to choose among managers. They are
+    assumed to have <b>expertise in conducting due diligence</b> and may be able to <b>negotiate better redemption terms</b> than
+    individual investors. They may diversify across <b>strategies, investment regions and management styles</b>. <b>The distinction
+    between a single hedge fund and a fund of funds is not necessarily clear-cut — hedge funds can invest in other hedge funds.</b>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 26 · HEDGE FUND STRATEGIES ================= -->
+<section class="sheet">
+  <div class="sec">§2.2.2 · Hedge fund strategies — four groups, twenty-plus strategies</div>
+
+  <p><small>Hedge fund strategies arise from taking <b>speculative positions in a combination of market and credit risk instruments</b>
+  for which the manager believes the <b>risk-reward relationship is attractive</b>. Such positions are often referred to as
+  <b>arbitrage, or risk arbitrage</b>.</small></p>
+
+  <table>
+    <thead><tr><th style="width:22%">Group</th><th>Objective and subcategories</th></tr></thead>
+    <tbody>
+      <tr><td><b>Equity hedge</b></td><td>Seek <b>long-term capital appreciation while maintaining low net exposure</b> to the overall
+      stock market or individual industry groups; profit from long or short positions in publicly traded equities and equity
+      derivatives.<br>
+      <b>Market neutral</b> — technical or fundamental analysis to hold undervalued equities long and overvalued equities short in
+      <b>approximately equal amounts</b>, profiting from relative price movements <b>without exposure to market risk</b>.
+      <b>Fundamental growth</b> — buy high-growth companies expected to sustain high capital appreciation. <b>Fundamental value</b> —
+      buy shares believed undervalued; <b>it is the hedge fund structure, not the assets, that makes this an alternative investment</b>.
+      <b>Quantitative directional</b> — long undervalued, short overvalued based on <b>technical analysis</b>; market exposure varies
+      with the relative size of the two books. <b>Short bias</b> — predominantly short overvalued equities, possibly with smaller longs,
+      but <b>negative market exposure overall</b>.</td></tr>
+      <tr><td><b>Event driven</b></td><td>Concentrate on the <b>profit potential created by major corporate events</b> — mergers,
+      acquisitions, restructurings, bankruptcies or liquidations — through long or short positions in common equity, preferred equity or
+      debt.<br>
+      <b>Merger arbitrage</b> — <b>buy the shares of the firm being acquired and sell short the acquirer</b>.
+      <b>Distressed / restructuring</b> — buy the undervalued securities of firms in financial distress where analysis shows a successful
+      restructuring will add value; possibly short overvalued security types simultaneously. <b>Activist shareholder</b> — buy enough
+      equity to <b>influence company policy</b> and increase company value. <b>Special situations</b> — firms issuing or repurchasing
+      securities, spinning off divisions, selling assets or distributing capital.</td></tr>
+      <tr><td><b>Relative value</b></td><td>Profit from a <b>pricing discrepancy — an unusual short-term relationship — between related
+      securities</b>, expecting the discrepancy to <b>resolve over time</b>.<br>
+      <b>Fixed-income convertible arbitrage</b> — market-neutral (a theoretical zero-beta portfolio); exploit mispricing between a
+      convertible bond and its component parts by <b>buying the convertible debt and simultaneously selling the same issuer's common
+      stock</b>. <b>Fixed-income asset backed</b> — relative value across <b>ABS and MBS</b>. <b>Fixed-income general</b> — long/short
+      between two corporate issuers, corporate versus government, different parts of one capital structure, or different parts of a yield
+      curve. <b>Volatility</b> — use options to go long or short <b>market volatility</b>, with <b>dynamic hedging</b> to offset related
+      risks. <b>Multi-strategy</b> — relative value within and across asset classes, looking for opportunities wherever they
+      exist.</td></tr>
+      <tr><td><b>Macro</b></td><td>Based on <b>global economic trends and events</b>; long or short positions in equities, fixed income,
+      currencies or commodities. Emphasise a <b>top-down approach</b> to identify economic trends evolving across the world. Trade the
+      <b>most liquid markets — currencies and government bonds</b> — betting on macroeconomic events such as <b>changes in interest rate
+      policies or currency devaluations</b>, relying mostly on an assessment of <b>economic fundamentals</b>.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 27 · HEDGE FUND FEES WORKED ================= -->
+<section class="sheet">
+  <div class="sec">§2.2.3 · Hedge fund fees — the worked example</div>
+
+  <div class="grid2">
+    <div class="card tight">
+      <h4>Fee levels</h4>
+      <p><small>The common structure was once <b>“2 and 20”</b> — a <b>2% management fee</b> and a <b>20% incentive fee</b>, both paid by
+      LP investors. The <b>average industry fee is now closer to 1.6% and 17.75%</b>. <b>Funds of hedge funds</b> may charge a further
+      <b>1% management fee and 10% incentive fee</b> — <b>“1 and 10”</b> — <b>in addition to</b> the fees charged by the individual hedge
+      funds inside the structure.</small></p>
+    </div>
+    <div class="card tight">
+      <h4>Profit definitions</h4>
+      <p><small>Profits can be defined as <b>(1) any gains in value</b>, <b>(2) any gains in value in excess of the management fee</b>,
+      or <b>(3) gains in excess of a hurdle rate</b>. The incentive fee may be calculated <b>on profits net of management fees</b> or
+      <b>independent of them</b>. <b>The question will say which.</b></small></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>ABC Funds — guide §2.2.3</h3>
+    <p><small>ABC Funds has a value of <b>R110 million at initiation</b>. It charges a <b>2% management fee</b> based on AUM <b>at the
+    beginning of the year</b> and a <b>20% incentive fee with a 5% hurdle rate</b>, and <b>uses a high-water mark</b>. Incentive fees are
+    calculated on <b>gains net of management fees</b>. Ending values <b>before fees</b>: <b>Year 1 R102.2m</b>, <b>Year 2
+    R118.0m</b>.</small></p>
+    <h4>Year 1</h4>
+    <div class="kv">
+      <div class="row"><span class="k">Management fee — R110.0m × 2%</span><span class="v">R2.2m</span></div>
+      <div class="row"><span class="k">Return net of management fee — (R102.2m − R2.2m) ÷ R110.0m − 1</span><span class="v neg">−9.1%</span></div>
+      <div class="row"><span class="k">Incentive fee — the return is <b>less than the hurdle rate</b></span><span class="v">R0</span></div>
+      <div class="row"><span class="k"><b>Total fees</b></span><span class="v">R2.2m</span></div>
+      <div class="row"><span class="k"><b>Ending value net of fees</b> — R102.2m − R2.2m</span><span class="v">R100.0m</span></div>
+    </div>
+    <h4>Year 2</h4>
+    <div class="kv">
+      <div class="row"><span class="k">Management fee — R100.0m × 2%</span><span class="v">R2.0m</span></div>
+      <div class="row"><span class="k">Return net of management fee — (R118.0m − R2.0m) ÷ R100.0m − 1</span><span class="v pos">+16.0%</span></div>
+      <div class="row"><span class="k">Incentive fee — (R118.0m − R2.0m − <b>R110.0m</b>) × 20%</span><span class="v">R1.2m</span></div>
+      <div class="row"><span class="k"><b>Total fees</b> — R2.0m + R1.2m</span><span class="v">R3.2m</span></div>
+      <div class="row"><span class="k"><b>Net return</b> — (R118.0m − R3.2m) ÷ R100.0m − 1</span><span class="v pos">+14.8%</span></div>
+    </div>
+  </div>
+
+  <div class="exam">
+    <span class="t">Exam watch — where the marks are lost</span> In Year 2 the incentive fee is <b>calculated based on gains in value
+    above R110 million, because that is the high-water mark</b> — <b>not</b> above the R100 million the year opened with. Substituting
+    R100m there is the single most common error in this calculation.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 28 · HF DUE DILIGENCE, VALUATION, SA ================= -->
+<section class="sheet">
+  <div class="sec">§2.2.4–2.2.7 · Benefits, due diligence, valuation and SA hedge funds</div>
+
+  <div class="grid2">
+    <div class="card tight">
+      <h4>Potential benefits and risks</h4>
+      <p><small>Hedge fund returns have tended to be <b>better than global equities in down markets</b> and to <b>lag global equities in
+      up markets</b>. <b>Different strategies have the best returns during different time periods.</b> Statements about performance and
+      diversification benefits are <b>problematic because of the great variety of strategies used</b>. Less-than-perfect correlation with
+      global equity returns may offer some diversification benefit, <b>but correlations tend to increase during periods of financial
+      crisis</b>.<br>
+      Institutional investors' <b>number one objective</b> is returns <b>uncorrelated to equity</b>. Correlation with traditional stocks
+      runs <b>20–35%</b> for futures, fixed arbitrage and global macro funds, up to <b>70–80%</b> for long/short or emerging equity
+      funds.</small></p>
+    </div>
+    <div class="card tight">
+      <h4>Valuation</h4>
+      <p><small>Values are based on <b>market values for traded securities</b> but must use <b>model (estimated) values for non-traded
+      securities</b>. It is <b>most conservative to use the prices at which a position could be closed — bid prices for long positions
+      and ask prices for short positions</b>; some funds use <b>the average of bid and ask</b> instead. For <b>illiquid securities</b>,
+      quoted prices may be <b>reduced for the degree of illiquidity</b>, based on position size relative to total value outstanding and
+      average trading volume.</small></p>
+    </div>
+  </div>
+
+  <div class="card tight">
+    <h4>Due diligence — what to examine</h4>
+    <p><small><b>Investment strategy · investment process · source of competitive advantages · historical returns · valuation and returns
+    calculation methods · longevity · amount of assets under management · management style · key person risk · reputation · growth plans
+    · systems for risk management · appropriateness of benchmarks.</b><br>
+    The analysis is challenging: a <b>lack of persistence in returns</b> means past outperformers may not outperform in future, and
+    reputation, risk systems and management style are <b>difficult to quantify</b>. Previously profitable strategies <b>become less
+    profitable as more funds pursue them</b>. One further factor: the <b>percentage of total AUM held by any single investor</b> —
+    <b>a large withdrawal may cause the fund to fail</b>, especially if assets are illiquid. Transparency is limited: funds treat
+    strategies as <b>proprietary</b> and <b>regulatory disclosure requirements are minimal</b>.</small></p>
+  </div>
+
+  <div class="card tight">
+    <h4>Hedge funds in South Africa</h4>
+    <p><small>Internationally hedge funds have been around <b>about 60 years</b>; in SA they are a <b>relatively newer phenomenon</b>.
+    Following the development of <b>securities lending in the early 1990s</b>, some hedge trading developed in proprietary funds.
+    <b>By 2000</b> there were approximately <b>20–30 hedge funds (R2.5bn)</b>. Growth was slow — <b>120 funds in 2005 with R10bn AUM</b>,
+    to <b>140 managers and R60bn+ AUM in 2016</b>. <b>In 2017 assets moved to R62bn</b> according to the Novare survey.<br>
+    <b>Drivers for growth:</b> <b>regulatory development</b> — Regulation 28, covering pension fund investment into hedge funds, and
+    regulation of hedge funds under <b>CISCA</b> as either a Retail Investor Hedge Fund or a Qualified Investor Hedge Fund — and
+    <b>demand from international investors</b> for diversified investment exposure.</small></p>
+  </div>
+
+  <div class="exam">
+    <span class="t">Exam watch · the CISCA classes</span> <b>Retail Investor Hedge Funds (RHFs)</b> — minimum <b>R50,000</b>; <b>priced
+    daily</b>; <b>withdraw within a month</b>; <b>more prescriptive</b> regulation. <b>Qualified Investor Hedge Funds (QIHFs)</b> —
+    experienced or institutional investors with <b>R1 million or more</b>; <b>priced monthly</b>; <b>one calendar month's notice</b>;
+    managers have <b>greater freedom</b>.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 29 · PRIVATE EQUITY 1 ================= -->
+<section class="sheet">
+  <div class="sec">§2.3 · Private equity — strategies and leveraged buyouts</div>
+
+  <div class="def">
+    <span class="term">Private equity</span> — investment in <b>privately owned companies</b>, or in <b>public companies with the intent
+    to take them private</b>. The focus of private equity firms, which may manage many funds, <b>changes over time as business conditions
+    and the availability of financing change</b>.
+  </div>
+
+  <div class="chips">
+    <span class="chip p">Leveraged buyouts</span><span class="chip p">Venture capital</span>
+    <span class="chip">Development capital</span><span class="chip">Distressed investing</span>
+  </div>
+  <p><small class="muted">The majority of private equity funds invest either in <b>private companies or public companies they intend to
+  take private (LBO funds)</b>, or in <b>early stage companies (venture capital funds)</b>. Two additional, smaller categories are
+  <b>distressed investment funds</b> and <b>developmental capital funds</b>. A private equity fund may <b>also charge fees for arranging
+  buyouts, fees for a deal that does not happen, and fees for handling asset divestitures after a buyout</b>.</small></p>
+
+  <h3>Leveraged buyouts — the most common type</h3>
+  <p><small><b>“Leveraged” refers to the fact that the fund's purchase of the portfolio company is funded primarily by debt.</b> This may
+  be:</small></p>
+  <ul class="tick">
+    <li><b>Bank debt</b> — leveraged debt</li>
+    <li><b>High-yield bonds</b></li>
+    <li><b>Mezzanine financing</b> — <b>debt or preferred shares that are subordinate to the high-yield bonds issued</b> and that
+    <b>carry warrants or conversion features</b> giving investors participation in equity value increases</li>
+  </ul>
+
+  <div class="grid2">
+    <div class="card tight">
+      <h4>MBO — management buyout</h4>
+      <p><small>The <b>existing management team is involved in the purchase</b>.</small></p>
+    </div>
+    <div class="card tight">
+      <h4>MBI — management buy-in</h4>
+      <p><small>An <b>external management team will replace the existing management team</b>.</small></p>
+    </div>
+  </div>
+
+  <div class="card tight">
+    <h4>How value is created — and what makes a good candidate</h4>
+    <p><small>In an LBO the private equity firm seeks to increase firm value through some combination of <b>new management, management
+    incentives, restructuring, cost reduction or revenue enhancement</b>. <b>Firms with high cash flow are attractive LBO candidates,
+    because their cash flow can be used to service and eventually pay down the debt taken on for the acquisition.</b></small></p>
+  </div>
+
+  <div class="exam">
+    <span class="t">Exam watch</span> <b>Buyout investors take a majority control in acquired companies; venture capitalists only take a
+    minority interest.</b> That one line separates the two strategies in most multiple-choice framings.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 30 · PRIVATE EQUITY 2 ================= -->
+<section class="sheet">
+  <div class="sec">§2.3 · Venture capital stages and exit strategies</div>
+
+  <p><small>Venture capital funds invest in companies <b>in the early stages of their development</b>. The investment is often <b>equity
+  but can be convertible preferred shares or convertible debt</b>. While the risk of start-ups is often great, <b>returns on successful
+  companies can be very high</b> — often when a company is grown to the point of being sold, at least in part, to the public via an
+  <b>IPO</b>. Investee companies are the fund's <b>portfolio companies</b>, and <b>VC managers are closely involved in their
+  development, often sitting on boards or filling key management roles</b>.</small></p>
+
+  <table>
+    <thead><tr><th style="width:24%">Stage</th><th>What the money does</th></tr></thead>
+    <tbody>
+      <tr><td><b>Formative — angel investing</b></td><td>Investments made <b>very early in a firm's life, often the “idea” stage</b>.
+      Funds are used for <b>business plans and assessing market potential</b>. <b>The funding source is usually individuals — “angels” —
+      rather than venture capital funds.</b></td></tr>
+      <tr><td><b>Formative — seed stage</b></td><td>Investments for <b>product development, marketing and market research</b>.
+      <b>This is typically the stage at which venture capital funds make their initial investments</b>, through ordinary or convertible
+      preferred shares.</td></tr>
+      <tr><td><b>Formative — early stage</b></td><td>Investments made to fund <b>initial commercial production and sales</b>.</td></tr>
+      <tr><td><b>Later stage</b></td><td>The company <b>already has production and sales and is operating as a commercial entity</b>.
+      Funds are typically used for <b>expansion of production and/or increasing sales through an expanded marketing
+      campaign</b>.</td></tr>
+      <tr><td><b>Mezzanine-stage financing</b><br><small class="muted">also called <b>bridge</b></small></td><td>Capital provided to
+      <b>prepare the firm for an IPO</b> — the bridge between the expanding company and the IPO. <b>The term refers to the timing of the
+      financing — between private company and public company — rather than the type of financing.</b></td></tr>
+    </tbody>
+  </table>
+
+  <div class="card tight">
+    <h4>What venture capital looks for</h4>
+    <p><small><b>Exponential growth potential · an attractive industry · a sustainable advantage platform · an excellent team with
+    “execution” · owners receptive to the involvement of outsiders · owners willing to share the wealth creation · credible exit
+    alternatives four to seven years out.</b></small></p>
+  </div>
+
+  <h3>Exit strategies — the average holding period is five years</h3>
+  <table>
+    <thead><tr><th style="width:26%">Exit</th><th>Mechanism</th></tr></thead>
+    <tbody>
+      <tr><td><b>Trade sale</b></td><td>Sell a portfolio company to a <b>competitor or another strategic buyer</b>.</td></tr>
+      <tr><td><b>IPO</b></td><td>Sell <b>all or some shares</b> of a portfolio company <b>to the public</b>.</td></tr>
+      <tr><td><b>Recapitalisation</b></td><td>The company <b>issues debt to fund a dividend distribution to equity holders</b> — the
+      fund. <b>This is not an exit — the fund still controls the company — but is often a step toward one.</b></td></tr>
+      <tr><td><b>Secondary sale</b></td><td>Sell a portfolio company to <b>another private equity firm or a group of
+      investors</b>.</td></tr>
+      <tr><td><b>Write-off / liquidation</b></td><td><b>Reassess and adjust to take losses</b> from an unsuccessful outcome.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 31 · REAL ESTATE 1 ================= -->
+<section class="sheet">
+  <div class="sec">§2.4 · Real estate — the asset types</div>
+
+  <p><small>Investment in real estate can provide <b>income in the form of rents</b> as well as the potential for <b>capital gains</b>.
+  As an asset class it can provide <b>diversification benefits</b> and a <b>potential inflation hedge</b>, because rents and values tend
+  to increase with inflation. The three asset types: <b>residential property</b> (single-family homes), <b>commercial property</b>
+  (produces income), and <b>mortgages</b> (loans with residential or commercial property as collateral).</small></p>
+
+  <div class="card tight">
+    <h4>Residential property</h4>
+    <p><small>Considered a <b>direct investment</b> in real estate. Some buyers pay cash but most take a <b>mortgage</b>. The <b>issuer
+    (lender) of the mortgage has a direct investment in a whole loan and is said to “hold the mortgage”</b>. Issuers often sell the
+    mortgages they originate; those are then <b>pooled (securitised) as publicly traded mortgage-backed securities (MBS)</b>, which
+    represent an <b>indirect investment in the mortgage loan pool</b>. Property purchased with a mortgage is a <b>leveraged
+    investment</b>, and <b>the owner's equity is the property value minus the outstanding loan amount</b> — so changes in property value
+    over time <b>affect the owner's equity</b>.</small></p>
+  </div>
+
+  <div class="card tight">
+    <h4>Commercial real estate</h4>
+    <p><small>Generates <b>income from rents</b>. <b>Homes purchased for rental income are considered investment in commercial
+    property.</b> Large properties such as an office building are a <b>direct investment for institutions or wealthy individuals</b>,
+    purchased for cash or leveraged with a mortgage. <b>Long time horizons, illiquidity, the large size of investment needed and the
+    complexity of the investments make commercial real estate inappropriate for many investors.</b> It can also be held by a <b>limited
+    partnership</b> — partners have limited liability and the general partner manages the investment and the properties — or by a
+    <b>REIT</b>.</small></p>
+  </div>
+
+  <div class="def">
+    <span class="term">REIT — real estate investment trust</span> — issues <b>shares that trade publicly like shares of stock</b>. REITs
+    are often identified by the <b>type of real estate assets they hold</b>: mortgages, hotel properties, malls, office buildings or
+    other commercial property. <b>Income is used to pay dividends</b>, and <b>typically 90% of income must be distributed to shareholders
+    to avoid taxes</b> that the REIT would otherwise pay before distribution.
+  </div>
+
+  <div class="note">
+    <span class="t">Why REITs exist</span> The REIT market <b>has expanded to overcome many of the problems of direct investment</b>.
+    Shares are <b>actively traded and are more likely to reflect market value</b>; investing in a REIT gives <b>exposure to a diversified
+    real estate portfolio</b>; and <b>investors do not need property management expertise, because the REIT manages the
+    properties</b>.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 32 · REAL ESTATE 2 ================= -->
+<section class="sheet">
+  <div class="sec">§2.4.1–2.4.3 · Real estate characteristics, reasons and risks</div>
+
+  <h3>Eight characteristics that complicate measurement</h3>
+  <table>
+    <thead><tr><th style="width:28%">Characteristic</th><th>Why it matters</th></tr></thead>
+    <tbody>
+      <tr><td><b>Heterogeneity</b></td><td>Bonds from one issue are alike, as are the shares of one company — but <b>no two properties
+      are exactly the same</b>, because of location, size, age, construction materials, tenants and lease terms.</td></tr>
+      <tr><td><b>High unit value</b></td><td>Real estate is <b>indivisible</b>, so unit value is significantly higher than for stocks and
+      bonds, <b>making a diversified portfolio difficult to construct</b>.</td></tr>
+      <tr><td><b>Active management</b></td><td>Private real estate investment <b>requires active property management</b> — maintenance,
+      negotiating leases, collecting rents. <b>Management costs must be considered</b> either way.</td></tr>
+      <tr><td><b>High transaction costs</b></td><td>Buying and selling involves <b>appraisers, lawyers, brokers and construction
+      personnel</b>.</td></tr>
+      <tr><td><b>Depreciation and desirability</b></td><td>Buildings <b>wear out over time</b> and may become <b>less desirable because
+      of location, design or obsolescence</b>.</td></tr>
+      <tr><td><b>Cost and availability of debt capital</b></td><td>Values are impacted by the level of interest rates and the
+      availability of debt capital — <b>usually lower when rates are high and debt capital is scarce</b>.</td></tr>
+      <tr><td><b>Lack of liquidity</b></td><td>It <b>takes time to market and complete the sale</b> of a property.</td></tr>
+      <tr><td><b>Difficulty in determining price</b></td><td>Heterogeneity and low transaction volume mean <b>appraisals are usually
+      necessary</b> — and even then values are <b>often based on similar, not identical, properties</b>. Limited market participants and
+      lack of local knowledge make it hard for an outsider to value property, so <b>the market is less efficient</b> — which means
+      <b>investors with superior information and skill may have an advantage in exploiting the inefficiencies</b>.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <span class="t">The pay-off for that inefficiency</span> Because appraisals rest on <b>similar rather than identical</b> properties
+    and few participants know a local market well, real estate is <b>less efficiently priced than listed securities</b> — which is
+    exactly why <b>investors with superior information and skill may have an advantage in exploiting the market inefficiencies</b>.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 32b · REAL ESTATE 3 ================= -->
+<section class="sheet">
+  <div class="sec">§2.4.2–2.4.3 · Real estate — reasons to invest and principal risks</div>
+
+  <div class="grid2">
+    <div class="card tight">
+      <h4>Five reasons to invest</h4>
+      <ul class="tick">
+        <li><b>Current income</b> — rents, after operating expenses, financing costs and taxes</li>
+        <li><b>Capital appreciation</b> — property values expected to rise over time</li>
+        <li><b>Inflation hedge</b> — both rents and values expected to rise with inflation</li>
+        <li><b>Diversification</b> — less than perfectly correlated with stocks and bonds</li>
+        <li><b>Tax benefits</b> — in some countries the <b>depreciable life is shorter than the actual life</b>, so depreciation expense
+        is higher and taxable income lower; and <b>REITs do not pay taxes in some countries</b>, letting investors <b>escape double
+        taxation</b></li>
+      </ul>
+    </div>
+    <div class="card tight">
+      <h4>The principal risks</h4>
+      <p><small><b>Business conditions</b> — GDP, employment, household income, interest rates, inflation · <b>new property lead
+      time</b> — conditions can weaken between approval, completion and full lease-up · <b>cost and availability of capital</b> ·
+      <b>unexpected inflation</b> — some leases pass it through, but values may not keep up when markets are weak · <b>demographic
+      factors</b> · <b>lack of liquidity</b> — a quick sale requires a <b>significant discount</b> · <b>environmental issues</b> —
+      contamination by a prior or adjacent owner · <b>availability of information</b> · <b>management expertise</b> · <b>leverage</b> —
+      measured by the <b>loan-to-value (LTV) ratio</b>; higher LTV means higher risk since <b>lenders have a superior claim on
+      default</b>, and a <b>small decrease in NOI is magnified</b> in the cash flow left to equity · <b>other</b> — defects, natural
+      disasters, terrorism.<br>
+      Identified risks can be <b>hedged using insurance</b> or <b>shifted to tenants</b> — a lease could require the tenant to
+      <b>reimburse unexpected operating expenses</b>.</small></p>
+    </div>
+  </div>
+
+  <div class="exam">
+    <span class="t">Exam watch</span> Two real estate traps recur. First, <b>homes purchased for rental income are an investment in
+    commercial property</b>, not residential — the classification follows <b>the income, not the building type</b>. Second, on
+    <b>leverage</b>: a higher LTV means higher risk <b>because lenders hold a superior claim in the event of default</b>, and because a
+    <b>small fall in net operating income is magnified</b> in whatever cash flow reaches the equity holder after debt service.
+  </div>
+
+  <div class="card tight">
+    <h4>Direct investment vs the REIT — a summary</h4>
+    <table>
+      <thead><tr><th style="width:34%"></th><th>Direct / private</th><th>REIT</th></tr></thead>
+      <tbody>
+        <tr><td><b>Liquidity</b></td><td>Illiquid — slow to market and sell</td><td><b>Actively traded</b> like a share</td></tr>
+        <tr><td><b>Pricing</b></td><td>Appraisal-based, from similar properties</td><td><b>More likely to reflect market
+        value</b></td></tr>
+        <tr><td><b>Diversification</b></td><td>Hard — <b>high indivisible unit value</b></td><td>Exposure to a <b>diversified
+        portfolio</b></td></tr>
+        <tr><td><b>Management</b></td><td>Requires <b>active management</b> by the owner or an agent</td><td><b>The REIT manages the
+        properties</b></td></tr>
+        <tr><td><b>Tax</b></td><td>Depreciation shelters income in some countries</td><td><b>90% of income must be
+        distributed</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 33 · COMMODITIES 1 ================= -->
+<section class="sheet">
+  <div class="sec">§2.5 · Commodities — routes to exposure</div>
+
+  <p class="lead">Commodities are <b>real assets, mostly natural resources</b> — agricultural products, oil, natural gas, precious and
+  industrial metals. They are considered a <b>hedge against inflation</b> as they are <b>not sensitive to public equity markets</b>, and
+  their value rises and falls with <b>supply and demand</b>. From politics and weather to disease and speculation, commodities are
+  <b>among the most volatile instruments in the financial world</b>.</p>
+
+  <div class="note">
+    <span class="t">Why derivatives dominate</span> While it is possible to invest directly in commodities such as grain and gold,
+    <b>the most commonly used instruments to gain exposure to commodity prices are derivatives</b> — because commodities are physical
+    goods and therefore <b>incur costs for storage and transportation</b>. <b>Returns are based on price changes and not on income
+    streams.</b>
+  </div>
+
+  <table>
+    <thead><tr><th style="width:24%">Route</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr><td><b>Direct physical investment</b></td><td>Unless the investment comprises commodities such as <b>Krugerrand gold
+      coins</b>, investors would require <b>warehouses to store the commodities</b> — <b>generally considered impractical and
+      uneconomic</b>. Physical investment is also <b>limiting for investors seeking broad exposure</b>.</td></tr>
+      <tr><td><b>Shares of commodity producers</b></td><td>Exposes the investor <b>not only to commodities but to the financial
+      structure, governance and management skills and practices of the company</b>. In addition the company <b>may validly hedge its own
+      production</b>, so <b>investors will not get the full benefit of changes in commodity prices</b>.</td></tr>
+      <tr><td><b>Commodity futures</b></td><td>Purchase futures contracts to <b>simulate ownership</b>. By <b>periodically rolling over
+      the contracts prior to expiry</b> and reinvesting in new futures, investors obtain returns <b>equal to the return from a single
+      commodity or an index of several</b>.</td></tr>
+      <tr><td><b>Commodity index funds</b></td><td>Let investors buy a <b>balanced and diversified basket of commodities in a single
+      investment</b>. <b>Index funds do not have physical ownership</b> — they use futures to buy a forward position, sell it as it
+      approaches expiry, and use the proceeds to <b>buy forward again by one or two months</b>. <b>The most liquid index is the Standard
+      &amp; Poor's Goldman Sachs Commodities Index (S&amp;P GSCI).</b></td></tr>
+      <tr><td><b>ETFs and ETNs</b></td><td><b>Exchange traded funds (ETFs)</b> are traded instruments representing <b>ownership in an
+      underlying portfolio of commodities</b>. <b>Exchange traded notes (ETNs)</b> are traded as <b>debt securities</b> — <b>a promise to
+      pay the investor an amount linked to a given benchmark</b>, so <b>the investor takes on the credit risk of the issuer</b>.
+      <b>There are currently no commodity-based ETFs or ETNs in South Africa.</b></td></tr>
+      <tr><td><b>Exchange traded commodities (ETCs)</b></td><td>Vehicles that track the performance of a <b>single underlying commodity
+      — gold, oil, zinc — or a commodity index</b>. <b>Traded and settled exactly like normal shares</b>, with dedicated ETC sectors on
+      the <b>London Stock Exchange, Euronext Amsterdam and Deutsche Börse</b>. Generally benchmark a <b>total-return index</b>. <b>The
+      first ETC was a Gold ETC listed in 2003 on the Australian Securities Exchange</b>; an ETC was first listed on the LSE in
+      <b>2004</b>.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 34 · COMMODITIES 2 ================= -->
+<section class="sheet">
+  <div class="sec">§2.5.1–2.5.5 · Sectors, investors, valuation and returns</div>
+
+  <div class="grid2">
+    <div class="card tight">
+      <h4>The six sectors</h4>
+      <p><small><b>Energy</b> — crude oil, natural gas and refined products; <b>the sector with the greatest market value</b>.
+      <b>Industrial metals</b> — aluminium, nickel, zinc, lead, tin, iron and copper, plus <b>rare-earth metals</b> used increasingly in
+      electronics. <b>Grains</b> — wheat, corn, soybeans, rice. <b>Livestock</b> — pigs, sheep, cattle, poultry. <b>Precious metals</b> —
+      gold, silver, platinum. <b>Softs (cash crops)</b> — coffee, sugar, cocoa, cotton.</small></p>
+    </div>
+    <div class="card tight">
+      <h4>The three types of investor</h4>
+      <p><small><b>Institutional</b> — insurers, banks, pension funds, investment companies, collective investment schemes, hedge funds
+      and endowments; <b>most hold commodities as a non-essential diversifying investment</b>. <b>Private</b> — high net worth and
+      sophisticated individuals, for an <b>inflation hedge and diversification</b>. <b>Retail</b> — <b>limited direct exposure</b>,
+      commodities traditionally regarded as <b>too volatile</b>; internationally <b>indirect exposure comes through the assets
+      institutions hold on their behalf</b>, such as pension funds.</small></p>
+    </div>
+  </div>
+
+  <div class="card tight">
+    <h4>Two sector dynamics worth knowing</h4>
+    <p><small><b>Crude oil</b> can be <b>stored indefinitely by keeping it in the ground</b>, and in tanks and tanker ships; many
+    countries hold <b>strategic reserves</b>. The two most traded grades are <b>Brent Crude and West Texas Intermediate (WTI)</b>.
+    Supply is affected by <b>drilling and extraction technology</b>, <b>economic cycles</b>, <b>alternative energy efficiency</b>,
+    <b>environmental restrictions</b> and <b>political risk</b> — <b>over half the crude supply comes from the Middle East</b>.<br>
+    <b>Industrial metals</b> demand is <b>primarily tied to GDP growth and business cycles</b>, through construction and manufacturing.
+    <b>Storage of metals is not costly.</b> <b>Union strikes and environmental regulation</b> can significantly affect supply; mines and
+    smelters are <b>large-scale operations with high development and fixed costs</b>.</small></p>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 35b · COMMODITIES 3 ================= -->
+<section class="sheet">
+  <div class="sec">§2.5.4–2.5.5 · Commodity prices, valuation and the sources of return</div>
+
+  <p><small><b>Spot prices for commodities are a function of supply and demand.</b> Demand is affected by the <b>value of the commodity to end-users</b> and by <b>global economic conditions and cycles</b>. Supply is affected by <b>production and storage costs and existing inventories</b>. <b>Both supply and demand are affected by the purchases and sales of non-hedging investors — speculators.</b><br>
+  For many commodities <b>supply is inelastic in the short run</b>, because of the <b>long lead times to alter production levels</b> — drilling oil wells, planting crops, or deciding to plant less of them. As a result <b>commodity prices can be volatile when demand changes significantly over the economic cycle</b>. Production of some commodities, <b>especially agricultural</b>, can be <b>significantly affected by the weather</b> — high prices when production is low, low prices when production is high. Costs of extracting oil and minerals <b>increase as more expensive methods or more remote areas are used</b>.</small></p>
+
+  <div class="card tight">
+    <h4>What each side analyses</h4>
+    <p><small><b>Producers</b> analyse <b>economic events, government policy and forecasts of future supply</b> to estimate future needs. <b>Investors</b> analyse <b>inventory levels, forecasts of production, changes in government policy and expectations of economic growth</b> in order to forecast commodity prices.</small></p>
+  </div>
+
+  <div class="note">
+    <span class="t">Why the formula has the shape it does</span> <b>Wheat today and wheat six months from today are different products.</b> Buying the commodity today gives the buyer <b>the use of it if needed</b>; contracting for delivery in six months <b>avoids storage costs and having cash tied up</b>. The cost-of-carry equation prices exactly that difference.
+  </div>
+
+  <h3>Valuation — the cost-of-carry equation</h3>
+  <div class="formula">
+    futures price = spot price (1 + risk-free rate) + storage costs − convenience yield
+  </div>
+  <div class="grid2">
+    <div class="card tight">
+      <h4>Contango vs backwardation</h4>
+      <p><small><b>Convenience yield</b> is the <b>value of having the physical commodity for use</b> over the period of the futures
+      contract. <b>If this equation does not hold, an arbitrage transaction is possible.</b><br>
+      <b>Little or no convenience yield → futures higher than spot → contango.</b><br>
+      <b>High convenience yield → futures less than spot → backwardation.</b></small></p>
+    </div>
+    <div class="card tight">
+      <h4>Three sources of futures returns</h4>
+      <p><small><b>Roll yield</b> — from the difference between spot and futures, or between two futures of different expiry, as futures
+      converge toward spot near expiration. <b>Positive for a market in backwardation, negative for a market in contango.</b>
+      <b>Collateral yield</b> — the <b>interest earned on collateral</b> required to enter the futures contract. <b>Change in spot
+      prices</b> — total price return combines the <b>spot move and the convergence of futures to spot</b>.</small></p>
+    </div>
+  </div>
+
+  <div class="note">
+    <span class="t">Benefits and risks</span> Returns have been <b>lower than global stocks or bonds</b> and <b>Sharpe ratios low</b>.
+    But correlations with global equities and bonds are <b>historically low — typically less than 0.2</b>, so commodities
+    <b>diversify</b>; and because prices <b>move with inflation</b> they <b>hedge inflation risk</b>. To the extent they track inflation
+    the <b>real return would be zero</b>, <b>though futures may offer positive real returns</b>. <b>Supply is inelastic in the short
+    run</b> — long lead times to drill or plant — which is why prices are volatile over the cycle.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 35 · CRYPTO 1 ================= -->
+<section class="sheet">
+  <div class="sec">§2.6 · Cryptocurrency and blockchain</div>
+
+  <div class="def">
+    <span class="term">Blockchain</span> — a <b>time-stamped series of an immutable record of data managed by a cluster of computers that
+    are not owned by a central authority</b>. A blockchain is <b>transparent</b>, and <b>everyone involved is accountable for their
+    actions</b>. <b>Blockchain is the technology that enables the existence of cryptocurrency</b>, among other things.
+  </div>
+
+  <div class="def">
+    <span class="term">Cryptocurrency</span> — a <b>digital or virtual currency secured by cryptography</b>; cryptocurrencies can also be
+    thought of as <b>decentralised networks based on blockchain technology</b>. A cryptocurrency is a <b>medium of exchange</b>, such as
+    the US dollar, <b>but digital</b>, using encryption techniques to <b>control the creation of monetary units and to verify the
+    transfer of funds</b>.
+  </div>
+
+  <div class="card tight">
+    <h4>Why it became an alternative investment</h4>
+    <p><small>Cryptocurrency has become an increasingly popular alternative investment <b>thanks to its relative accessibility</b>.
+    Because it is based on blockchain networks used for security, it is <b>almost impossible to double-spend cryptocurrency or for it to
+    be counterfeit</b>. It also <b>operates entirely independently from the government, making it unaffected by interference</b>.<br>
+    The drawbacks: that same independence <b>has in some cases led to its use in illegal activities</b>, and while it is thought to be
+    extremely secure, <b>the networks are still subject to some vulnerabilities</b>.<br>
+    There are <b>over 800 different cryptocurrencies</b> currently on the market according to <b>Coin Market Cap</b>, a platform where
+    cryptocurrencies are <b>ranked based on their total market volume</b>. <b>The most well-known example is Bitcoin, which is also the
+    most valuable today.</b></small></p>
+  </div>
+
+  <div class="card">
+    <h3>Bitcoin defined</h3>
+    <ul class="tick">
+      <li>The <b>first decentralised digital currency and worldwide payment system</b>, created by a <b>slow computer process called
+      mining</b></li>
+      <li>The international currency is <b>not regulated by banks</b> and can be used to <b>purchase goods from anywhere in the
+      world</b></li>
+      <li><b>There is only 21 million Bitcoin that can be mined in total</b>, and <b>this creates demand as adoption increases</b></li>
+      <li>It is <b>decentralised digital cash for the internet</b>, <b>not controlled by a central government or federal reserve, but by
+      the people who invest in it</b></li>
+      <li><b>All transactions are processed by miners</b>, creating a <b>digital ledger of secure and mostly anonymous transactions
+      between individuals</b></li>
+    </ul>
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 36 · CRYPTO 2 ================= -->
+<section class="sheet">
+  <div class="sec">§2.6.3–2.6.4 · Benefits of cryptocurrency and future scenarios</div>
+
+  <table>
+    <thead><tr><th style="width:22%">Benefit</th><th>Mechanism</th></tr></thead>
+    <tbody>
+      <tr><td><b>Fraud</b></td><td>Cryptocurrencies are <b>digital and cannot be counterfeited or reversed arbitrarily by the sender</b>,
+      as with <b>credit card chargebacks</b>.</td></tr>
+      <tr><td><b>Identity theft</b></td><td>When you give a credit card to a merchant you give them <b>access to your full credit
+      line</b>, even for a small transaction — credit cards operate on a <b>“pull” basis</b>, where the store initiates the payment and
+      pulls the designated amount from your account. <b>Cryptocurrency uses a push mechanism</b> that allows the holder to <b>send
+      exactly what they want to the recipient with no further information</b>.</td></tr>
+      <tr><td><b>Immediate settlement</b></td><td>Purchasing real property typically involves <b>third parties, delays and fees</b>. In
+      many ways the blockchain is a <b>“large property right database”</b>. Bitcoin contracts can be designed and enforced to
+      <b>eliminate or add third-party approvals, reference external facts, or be completed at a future date or time</b> — for <b>a
+      fraction of the expense and time required for traditional assets</b>.</td></tr>
+      <tr><td><b>Access to everyone</b></td><td>There are approximately <b>2.2 billion individuals with access to the internet or mobile
+      phones who do not currently have access to traditional exchange systems</b>. <b>These individuals are primed for the
+      cryptocurrency market.</b></td></tr>
+      <tr><td><b>Lower fees</b></td><td>There are usually <b>no transaction fees for the cryptocurrency exchange, because the network
+      compensates the miners</b>. Even so, <b>most users go through an online exchange, and those are likely to charge fees</b>.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="card tight">
+    <h4>Future scenarios the guide names</h4>
+    <p><small>Bitcoin, Ethereum, Ripple, Litecoin and others continue to experience <b>massive growth in price, market capitalisation and
+    mainstream adoption</b>. It is <b>no longer a question of whether cryptocurrencies are disrupting the global economy, but by how much
+    and what the future holds</b>.<br>
+    <b>The US Federal Reserve could issue its own digital currency</b>, as some global central banks are exploring. <b>Large companies
+    such as Amazon, Walmart and Starbucks might issue digital coins</b> that inspire trust and gain wide acceptance. <b>Retail giants, by
+    accepting payments in the currency, could elevate Bitcoin, Ethereum or another cryptocurrency above the others</b> vying to offer
+    safety, soundness and utility. And finally, <b>if trust is lost in government-backed, or fiat, currencies, a cryptocurrency future
+    could come about by default</b>.</small></p>
+  </div>
+
+  <div class="note">
+    <span class="t">The liquidity premium</span> The deck's framing for the whole of Chapter 2: alternative investments are <b>less
+    liquid</b> than traditional ones, and the extra return investors demand for accepting that illiquidity is the <b>liquidity
+    premium</b>. It is the single idea that ties together hedge fund lockups and notice periods, private equity's five-year holding
+    period, and real estate's slow sale at a discount.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 37 · APPENDIX DIRECTIONS ================= -->
+<section class="sheet">
+  <div class="sec">Appendix · The directions and relationships worth memorising</div>
+
+  <h3>Option price sensitivities</h3>
+  <table>
+    <thead><tr><th style="width:46%">If this rises…</th><th class="r">Call</th><th class="r">Put</th></tr></thead>
+    <tbody>
+      <tr><td>Price of the underlying</td><td class="r pos">↑</td><td class="r neg">↓</td></tr>
+      <tr><td>Exercise / strike price</td><td class="r neg">↓</td><td class="r pos">↑</td></tr>
+      <tr><td>Risk-free rate</td><td class="r pos">↑</td><td class="r neg">↓</td></tr>
+      <tr><td><b>Volatility</b></td><td class="r pos">↑</td><td class="r pos">↑</td></tr>
+      <tr><td><b>Time to expiration</b></td><td class="r pos">↑</td><td class="r pos">↑</td></tr>
+      <tr><td>Benefits of holding the asset (dividends, coupons)</td><td class="r neg">↓</td><td class="r pos">↑</td></tr>
+    </tbody>
+  </table>
+
+  <h3>The formulas</h3>
+  <table>
+    <thead><tr><th style="width:34%">Quantity</th><th>Formula</th></tr></thead>
+    <tbody>
+      <tr><td><b>Futures price</b></td><td>F = S (1 + r)<sup>t</sup></td></tr>
+      <tr><td><b>Intrinsic value of a call</b></td><td>Market price − Strike price</td></tr>
+      <tr><td><b>Intrinsic value of a put</b></td><td>Strike price − Market price</td></tr>
+      <tr><td><b>Call payoff</b></td><td>max(0, S<sub>T</sub> − X)</td></tr>
+      <tr><td><b>Put payoff</b></td><td>max(0, X − S<sub>T</sub>)</td></tr>
+      <tr><td><b>Profit on an option</b></td><td>Payoff − Premium</td></tr>
+      <tr><td><b>Breakeven on a long call</b></td><td>Strike + Premium</td></tr>
+      <tr><td><b>Commodity futures price</b></td><td>Spot (1 + risk-free rate) + storage costs − convenience yield</td></tr>
+      <tr><td><b>Hedge fund management fee</b></td><td>Beginning-of-year AUM × fee %</td></tr>
+      <tr><td><b>Hedge fund incentive fee</b></td><td>(Gross ending value − management fee − <b>high-water mark</b>) × incentive %</td></tr>
+    </tbody>
+  </table>
+
+  <div class="exam">
+    <span class="t">If you only revise one thing</span> <b>Forward commitment = obligation, symmetrical payoff, both parties bound.
+    Contingent claim = right, asymmetrical payoff, and the buyer's loss is capped at the premium.</b> Nearly every derivatives question
+    in this module is a variation on that one distinction.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+<!-- ================= 38 · APPENDIX TRAPS ================= -->
+<section class="sheet">
+  <div class="sec">Appendix · The traps</div>
+
+  <table>
+    <thead><tr><th style="width:28%">Trap</th><th>The right answer</th></tr></thead>
+    <tbody>
+      <tr><td><b>“Hedge funds hedge risk”</b></td><td><b>They do not necessarily hedge risk as the name might imply</b> — they seek
+      positive returns under all market conditions.</td></tr>
+      <tr><td><b>Short selling vs going short</b></td><td><b>Short selling = the spot/cash market. Going short = the derivatives
+      market.</b></td></tr>
+      <tr><td><b>Settlement date</b></td><td><b>Normally two days before</b> the final expiration date — not the same day.</td></tr>
+      <tr><td><b>Strike vs spot</b></td><td>The price specified in a derivative contract is <b>not the current or spot price</b> — it is
+      a price good for <b>future delivery</b>.</td></tr>
+      <tr><td><b>American vs European</b></td><td>American = <b>on or before</b> expiry, and is <b>the most common type</b>. European =
+      <b>only on</b> the expiration date.</td></tr>
+      <tr><td><b>Swap principal</b></td><td>The principal <b>usually does not change hands</b> during or at the end of the swap — only
+      the cash flows are exchanged.</td></tr>
+      <tr><td><b>Netting</b></td><td>Interest rate swap payments <b>are netted</b>. Currency swap payments <b>are not</b> — they are in
+      <b>different currencies</b>.</td></tr>
+      <tr><td><b>Payer vs receiver swaption</b></td><td><b>Payer</b> = pay fixed / receive floating; buyer <b>hopes the fixed rate
+      goes up</b>. <b>Receiver</b> = receive fixed / pay floating; buyer <b>hopes it goes down</b>.</td></tr>
+      <tr><td><b>Roll yield sign</b></td><td><b>Positive for a market in backwardation, negative for a market in contango.</b></td></tr>
+      <tr><td><b>Mezzanine-stage financing</b></td><td>Refers to the <b>timing</b> — between private and public company — <b>not the
+      type</b> of financing.</td></tr>
+      <tr><td><b>Recapitalisation</b></td><td><b>Not an exit</b> — the fund still controls the company. It is often a <b>step
+      toward</b> one.</td></tr>
+      <tr><td><b>High-water mark base</b></td><td>The incentive fee is computed on gains above <b>the high-water mark</b>, not above the
+      value the year opened with.</td></tr>
+      <tr><td><b>Homes bought to rent</b></td><td>Count as an investment in <b>commercial</b> property, not residential.</td></tr>
+      <tr><td><b>ETN credit risk</b></td><td>An ETN is a <b>debt security</b> — <b>the investor takes on the issuer's credit risk</b>.
+      An ETF, representing ownership of a portfolio, does not.</td></tr>
+      <tr><td><b>Angel funding source</b></td><td>Angel investing is funded by <b>individuals</b>, not by venture capital funds — VC
+      funds typically come in at the <b>seed stage</b>.</td></tr>
+      <tr><td><b>JSE vs BESA regulation</b></td><td><b>The JSE regulates exchange trading in derivatives; the BESA does not</b> — it
+      provides the platform, regulating fixed-income derivatives through <b>Intersec</b>.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <span class="t">Sources</span> <b>FMP V05 Mod06 Derivatives &amp; Alt Investments STUDY GUIDE 25 10 06 CJ</b> (60pp) and
+    <b>FMP V06 Mod06 Part Derivatives &amp; Alt Inv CLASS PRES 26 09 02 CJ</b> (122 slides). The <b>guide is the primary MCQ source</b>;
+    the deck carries the <b>futures pricing formula, the breakeven arithmetic and the CISCA RHF/QIHF split</b> the guide omits. Section
+    numbers are the guide's own.
+  </div>
+
+  <div class="foot"><span>Novia One · FMP <b>Module 6 — Derivatives Markets &amp; Alternative Investments</b></span><span>Summarised Reference · for class</span></div>
+</section>
+
+</body>
+</html>

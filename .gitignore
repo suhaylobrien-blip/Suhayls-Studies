@@ -22,3 +22,15 @@ venv/
 # commercial data: realised P&L, hedge fills, margin floors, counterparty terms and a
 # treasury control gap analysis. Backed up in the PRIVATE Brain repo instead.
 Module 5/Work Experience/
+
+# --- Novia One's own source material for Modules 6 & 7 (DO NOT push to a PUBLIC repo) ---
+# Study guides, class decks and blank workbooks remain Novia One Group (Pty) Ltd copyright.
+# Earlier modules pre-date this rule; these are excluded pending Suhayl's decision on whether
+# the repo should carry the publisher's PDFs at all. My own summaries and answers DO go up.
+Module 6/Novia one resources/
+Module 7/Novia one resources/
+Module 7/assignment/FMP V05 Mod07 FX Markets WORKBOOK*.pdf
+
+# Build verification artefacts - page PNGs written by build.py for eyeballing.
+# Regenerated on every build; not source.
+Module */build/snapshots/
